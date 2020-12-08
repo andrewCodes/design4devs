@@ -1,0 +1,53 @@
+@mixin section-layout { //creates container for sections
+    height: 100%;
+    width: 100%;
+    background-color: $color-dark;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+@mixin section-heading { // positions section heading
+    grid-column: 1/-1;
+    text-align: center;
+    justify-self: stretch;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(rgba($color-dark, 1) 0%, rgba($color-dark, 1) 63%, rgba($color-dark,0) 100%);
+    color: $color-base-x-dark;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+@mixin section-content { // creates grid container for main content within a section (i.e. everything except the section heading)
+    background-color: $color-dark;
+    display: grid;
+    grid-template-columns:  minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section-content__quote { // sets styles and placement of section quote
+    grid-column: 2/span 2;
+    margin-bottom: 5rem;
+    color: $color-base;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $font-code;
+    margin-top: 5rem;
+}
+
+@mixin section-content__bullet-bg {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+@mixin center-element { // centres element within its parent. N.B. must set position on parent element
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

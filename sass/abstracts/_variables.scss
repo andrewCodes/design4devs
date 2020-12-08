@@ -24,3 +24,7 @@ $gradient-dark: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($
 $shadow-lg: 0 1rem 3rem rgba(0,0,0,.175);
 $shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 $shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+
+// SEPARATORS
+
+$separator-base: dashed 2px $color-base;

@@ -47,8 +47,43 @@ body {
   background-color: #E3170A; }
 
 .colours-section {
-  height: 100vh;
-  background-color: #2b2d42; }
+  height: 100%;
+  width: 100%;
+  background-color: #2b2d42;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center; }
+  .colours-section__heading {
+    grid-column: 1/-1;
+    text-align: center;
+    justify-self: stretch;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
+    color: #E3170A;
+    position: sticky;
+    z-index: 2;
+    top: 0; }
+
+.colours {
+  background-color: #2b2d42;
+  display: grid;
+  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+  align-items: center;
+  justify-content: center; }
+  .colours__quote {
+    grid-column: 2/span 2;
+    margin-bottom: 5rem;
+    color: #FFB901;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Fira Code", monospace;
+    margin-top: 5rem; }
+  .colours__bullet-bg {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; }
 
 .continue {
   height: 250vh;
@@ -176,6 +211,24 @@ body {
       grid-row: 1/span 1;
       grid-column: 3/span 1; }
 
+.typography-section {
+  height: 100%;
+  width: 100%;
+  background-color: #2b2d42;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center; }
+  .typography-section__heading {
+    grid-column: 1/-1;
+    text-align: center;
+    justify-self: stretch;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
+    color: #E3170A;
+    position: sticky;
+    z-index: 2;
+    top: 0; }
+
 .typography {
   background-color: #2b2d42;
   display: grid;
@@ -184,10 +237,6 @@ body {
   grid-row-gap: 5rem;
   align-items: center;
   justify-content: center; }
-  .typography__title {
-    text-align: center;
-    color: #E3170A;
-    background-color: #2b2d42; }
   .typography__quote {
     grid-column: 2/span 2;
     margin-bottom: 5rem;
@@ -217,11 +266,11 @@ body {
       grid-column: 2/span 1; }
   .typography__bullet {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
     border-radius: 50%;
     padding: 1.5rem 1rem;
@@ -272,21 +321,3 @@ body {
       grid-row: 9/span 1; }
     .typography__separator--5 {
       grid-row: 11/span 1; }
-
-.typography-section {
-  height: 100%;
-  width: 100%;
-  background-color: #2b2d42;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center; }
-  .typography-section__heading {
-    grid-column: 1/-1;
-    text-align: center;
-    justify-self: stretch;
-    padding-bottom: 3rem;
-    background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
-    color: #E3170A;
-    position: sticky;
-    z-index: 2;
-    top: 0; }

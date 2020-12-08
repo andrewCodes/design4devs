@@ -1,41 +1,21 @@
-.typography {
-    background-color: $color-dark;
-    //height: 200vh;
-    display: grid;
-    grid-template-columns:  minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
-    grid-column-gap: 3rem;
-    grid-row-gap: 5rem;
-    align-items: center;
-    justify-content: center;
+.typography-section {
+    @include section-layout;
 
     &__heading {
-        
-    }
+        @include section-heading;
 
-    &__title {
-        text-align: center;
-        color: $color-base-x-dark;
-        background-color: $color-dark;
-        //align-self: start;
-        //position: sticky;
-        //top: 2rem;
-        //z-index: 2;
     }
+}
+
+.typography {
+    @include section-content;
 
     &__quote {
-        grid-column: 2/span 2;
-        margin-bottom: 5rem;
-        color: $color-base;
-        text-align: center;
-        font-size: 2rem;
-        font-family: $font-code;
-        margin-top: 5rem;
+        @include section-content__quote;
     }
 
     &__bullet-bg {
-        width: 100%;
-        padding-top: 100%;
-        position: relative;
+        @include section-content__bullet-bg;
 
         &--1 {
             grid-row: 2/span 1;
@@ -64,12 +44,10 @@
     }
 
     &__bullet {
-        position: absolute;
+        @include center-element;
+        
         width: 100%;
         height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         background-image: $gradient-dark;
         border-radius: 50%;
         padding: 1.5rem 1rem;
@@ -133,7 +111,7 @@
     
     &__separator {
         grid-column: 1/-1;
-        border-bottom: dashed 2px $color-base;
+        border-bottom: $separator-base;
         
         &--1 {
             grid-row: 3/span 1;
@@ -154,27 +132,5 @@
         &--5 {
             grid-row: 11/span 1;
         }
-    }
-}
-
-.typography-section {
-    height: 100%;
-    width: 100%;
-    background-color: $color-dark;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    
-    &__heading {
-        grid-column: 1/-1;
-        text-align: center;
-        justify-self: stretch;
-        padding-bottom: 3rem;
-        background-image: linear-gradient(rgba($color-dark, 1) 0%, rgba($color-dark, 1) 63%, rgba($color-dark,0) 100%);
-        color: $color-base-x-dark;
-        position: sticky;
-        z-index: 2;
-        top: 0;
-        
     }
 }

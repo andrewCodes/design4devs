@@ -1,4 +1,23 @@
 .colours-section {
-    height: 100vh;
-    background-color: $color-dark;
+    @include section-layout;
+    
+    &__heading {
+        @include section-heading;
+    }
+}
+
+.colours {
+    @include section-content;
+    
+    &__quote {
+        @include section-content__quote;
+    }
+    
+    &__bullet-bg {
+        @include section-content__bullet-bg;
+        
+        &--1 {
+            
+        }
+    }
 }
