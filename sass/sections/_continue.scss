@@ -1,0 +1,36 @@
+.continue {
+    height: 250vh;
+    //width: 100vw;
+    //top: 0;
+    //left: 0;
+    //bottom: 0;
+    //right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    //background: linear-gradient(to bottom, rgba($color-dark, 0) 0%, rgba($color-dark, 0) 20%, rgba($color-dark, 1) 80%, rgba($color-dark, 1) 100%);
+    position: relative;
+    //z-index: 2;
+
+    &__heading {
+        text-align: center;
+        color: $color-base-x-dark;
+        //align-self: start;
+        height: 50vh;
+        position: sticky;
+        z-index: 1;
+        top: 50vh;
+    }
+
+    &__grad {
+        height: 250vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, rgba($color-dark, 0) 0%, rgba($color-dark, 0) 40%, rgba($color-dark, 1) 80%, rgba($color-dark, 1) 100%);
+        position: absolute;
+        z-index: 2;
+    }
+}

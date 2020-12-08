@@ -1,0 +1,26 @@
+// FONTS
+
+$font-primary: 'Lato', sans-serif;
+$font-code: 'Fira Code', monospace;
+
+// COLOURS
+
+$color-dark: #2b2d42; // space cadet
+$color-light: #f6f6f6; // cultured
+$color-white: #ffffff;
+$color-white-8: rgba(255,255,255,.8);
+
+$color-base-x-dark: #E3170A; // vermillion
+$color-base-dark: #FC9D01; // orange peel
+$color-base: #FFB901; // selective yellow
+$color-base-light: #FFD801; // gold web golden
+$color-base-x-light: #FDE900; // middle yellow
+
+$gradient-full: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base-x-light,.97));
+$gradient-dark: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base,.97));
+    
+// SHADOWS
+
+$shadow-lg: 0 1rem 3rem rgba(0,0,0,.175);
+$shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+$shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);

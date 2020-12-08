@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Design for Devs</title>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="header-content">
+                <h1 class="heading-1 header-content__title">Web Design<br>for Web Developers</h1>
+                <form class="sign-up">
+                    <p class="sign-up__text">Join the mailing list for free design tips...</p>
+                    <div class="sign-up__input-group">
+                        <input id="sign-up__input--name" type="text" class="sign-up__input" placeholder="First Name">
+                        <label for="sign-up__input--name" class="sign-up__label">First Name</label>
+                    </div>
+                    <div class="sign-up__input-group">
+                        <input id="sign-up__input--email" type="email" class="sign-up__input" placeholder="Email">
+                        <label for="sign-up__input--email" class="sign-up__label">Email</label>
+                    </div>
+                    <button class="btn btn--primary sign-up__btn">Yes please!</button>
+                </form>
+            </div>
+
+        </header>
+
+        <!-- INTRO -->
+
+        <section class="intro">
+
+            <div class="intro__text-bg intro__text-bg--left">
+                <div class="intro__text">
+                    <h2 class="intro__heading intro__heading--left heading-2">Build beautiful websites</h2>
+                    <p class="intro__body intro__body--left">Simple rules and guidelines to improve your design skills</p>
+                </div>
+            </div>
+            <img src="img/Undraw/proud-coder.svg" alt="drawing of coder standing next to oversize browser window" class="intro__image intro__image--right">
+
+            <div class="intro__text-bg intro__text-bg--right">
+                <div class="intro__text intro__text--right">
+                    <h2 class="intro__heading intro__heading--left heading-2">Get designing today</h2>
+                    <p class="intro__body intro__body--left">Learn about typography, colours, images, UX and more</p>
+                </div>
+            </div>
+            <img src="img/Undraw/sitting-developer.svg" alt="drawing of coder sitting next to oversize browser window" class="intro__image intro__image--left">
+
+        </section>
+
+        <!-- CONTINUE TO SITE -->
+
+        <section class="continue">
+            <div class="continue__grad">&nbsp;</div>
+            <h2 class="heading-1 continue__heading">Continue to content...</h2>
+        </section>
+
+        <!-- TYPOGRAPHY -->
+        <section class="typography-section">
+            <h2 class="heading-1 typography-section__heading">Typography</h2>
+
+            <div class="typography">
+                <blockquote cite="https://en.wikipedia.org/wiki/Typography" class="typography__quote">&quot;The art and technique of arranging type to make written language readable and beautiful&quot;</blockquote>
+                
+                <!-- POINT 1 -->
+                
+                <div class="typography__bullet-bg typography__bullet-bg--1">
+                    <div class="typography__bullet">
+                        <h2 class="typography__bullet-number heading-1">1</h2>
+                        <p class="typography__bullet-text">Use a font size between 15 and 25 pixels</p>
+                    </div>
+                </div>
+                <div class="typography__explainer typography__explainer--1">
+                    <p>For body text we need to make sure that our next is neither too small nor too large.</p>
+                    <p>If we make our body text any smaller than <span>15 pixels</span> becomes too hard to read. As a result of this, your text will fail accessibility tests and your site's search engine ranking will fall.</p>
+                    <p>If we make body text any larger than <span>25 pixels</span> it looks out of place.</p>
+                </div>
+                <div class="typography__separator typography__separator--1"></div>
+
+                <!-- POINT 2 -->
+
+                <div class="typography__bullet-bg typography__bullet-bg--2">
+                    <div class="typography__bullet">
+                        <h2 class="typography__bullet-number heading-1">2</h2>
+                        <p class="typography__bullet-text">Use really big font sizes for headings</p>
+                    </div>
+                </div>
+                <div class="typography__explainer typography__explainer--2">
+                    <p>There really is no size limit here. We are looking to grab the reader's attention.</p>
+                    <p>When using very large font sizes you may find letters become blocky, too bold and don't look great. To address this, try reducing the <span>font-weight</span>.</p>
+                    <p>You can give large letters a little more breathing space by increasing the <span>letter-spacing</span>.</p>
+                </div>
+                <div class="typography__separator typography__separator--2"></div>
+
+                <!-- POINT 3 -->
+
+                <div class="typography__bullet-bg typography__bullet-bg--3">
+                    <div class="typography__bullet">
+                        <h2 class="typography__bullet-number heading-1">3</h2>
+                        <p class="typography__bullet-text">Use line-spacing between 120% and 150%</p>
+                    </div>
+                </div>
+                <div class="typography__explainer typography__explainer--3">
+                    <p>Browser default <span>line-spacing</span> is 100%. However, this is too small for blocks of text.</p>
+                    <p>If we use the browser default or any figure below <span>120%</span>, blocks of text look cramped, unpleasant and become hard to read.</p>
+                    <p> If we go beyond <span>150%</span> the gaps become too large and the brain has more difficulty following from one line to the next.</p>
+                </div>
+                <div class="typography__separator typography__separator--3"></div>
+
+                <!-- POINT 4 -->
+
+                <div class="typography__bullet-bg typography__bullet-bg--4">
+                    <div class="typography__bullet">
+                        <h2 class="typography__bullet-number heading-1">4</h2>
+                        <p class="typography__bullet-text">Have 45 to 90 characters of text per line</p>
+                    </div>
+                </div>
+                <div class="typography__explainer typography__explainer--4">
+                    <p>A line of text that is between 45 and 90 characters is the easiest length for people to follow.</p>
+                    <p>If we have a chunk of text and we make each line less than <span>45 characters</span> long there are <span>too many jumps</span> from one line to the next.</p>
+                    <p>However, if we make lines more than <span>90 characters</span> it becomes <span>too hard to follow</span> which line comes next.</p>
+                </div>
+                <div class="typography__separator typography__separator--4"></div>
+
+                <!-- POINT 5 -->
+
+                <div class="typography__bullet-bg typography__bullet-bg--5">
+                    <div class="typography__bullet">
+                        <h2 class="typography__bullet-number heading-1">5</h2>
+                        <p class="typography__bullet-text">Choose appropriate fonts</p>
+                    </div>
+                </div>
+                <div class="typography__explainer typography__explainer--5">
+                    <p>Choose a font that reflects the <span>look and feel</span> you want for the website. Experiment with different fonts if necessary.</p>
+                    <p>Consider whether sans-serif, serif or a mixture of both would be best for your site.</p>
+                    <p><span>Sans-serif</span>: More neutral | Clean | Simple | Modern websites<br><span>Serif</span>: Traditional purposes | Storytelling | Long reading</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- COLOURS -->
+        
+        <section class="colours-section">
+            <h2 class="heading-1 colours-section__heading">Colours</h2>
+            <div class="colours">
+                <blockquote class="colours__quote" cite="https://colormatters.com">&quot;Color plays a vitally important role in the world in which we live. Color can sway thinking, change actions, and cause reactions.&quot;</blockquote>
+            </div>
+
+
+            <!-- POINT 1 -->
+
+            <div class="colours__bullet-bg colours__bullet-bg--1">
+                <div class="colours__bullet">
+                    <h2 class="colours__bullet-number heading-1">1</h2>
+                    <p class="colours__bullet-text">Use a font size between 15 and 25 pixels</p>
+                </div>
+            </div>
+            <div class="colours__explainer colours__explainer--1">
+                <p>For body text we need to make sure that our next is neither too small nor too large.</p>
+                <p>If we make our body text any smaller than <span>15 pixels</span> becomes too hard to read. As a result of this, your text will fail accessibility tests and your site's search engine ranking will fall.</p>
+                <p>If we make body text any larger than <span>25 pixels</span> it looks out of place.</p>
+            </div>
+            <div class="colours__separator colours__separator--1"></div>
+        </section>
+        
+    </body>
+</html>
