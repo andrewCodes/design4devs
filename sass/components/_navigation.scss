@@ -1,0 +1,60 @@
+.navigation {
+
+    &__button {
+        background-color: $color-base;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__burger {
+        position: relative;
+        margin-top: 3.5rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-base-x-dark;
+            display: inline-block; //display must be specified for pseufo element to actually appear
+        }
+
+        &::before,
+        &::after {
+            content: ""; //content must be specified for a pseudo element to actually appear
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.8rem; // moves the element above the span
+        }
+
+        &::after {
+            top: .8rem; //moves the element below the span
+        }
+    }
+
+    &__nav {
+
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+}

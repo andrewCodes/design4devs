@@ -47,6 +47,35 @@ body {
   color: rgba(255, 255, 255, 0.8);
   background-color: #E3170A; }
 
+.navigation__button {
+  background-color: #FFB901;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__burger {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__burger, .navigation__burger::before, .navigation__burger::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #E3170A;
+    display: inline-block; }
+  .navigation__burger::before, .navigation__burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__burger::before {
+    top: -.8rem; }
+  .navigation__burger::after {
+    top: .8rem; }
+
 .colours-section {
   height: 100%;
   width: 100%;

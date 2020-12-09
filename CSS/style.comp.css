@@ -32,6 +32,7 @@ body {
   border: none;
   padding: 1rem 3rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition: all .2s; }
   .btn:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -45,6 +46,29 @@ body {
 .btn--primary {
   color: rgba(255, 255, 255, 0.8);
   background-color: #E3170A; }
+
+.navigation__burger {
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  background-color: #E3170A; }
+  .navigation__burger, .navigation__burger::before, .navigation__burger::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #E3170A;
+    display: inline-block; }
+  .navigation__burger::before, .navigation__burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__burger::before {
+    top: -.8rem; }
+  .navigation__burger::after {
+    top: .8rem; }
 
 .colours-section {
   height: 100%;
@@ -129,6 +153,10 @@ body {
       .colours__explainer p span {
         color: #E3170A;
         font-weight: 700; }
+      .colours__explainer p a:link, .colours__explainer p a:visited {
+        color: #E3170A;
+        font-weight: 700;
+        text-decoration: underline; }
     .colours__explainer--1 {
       grid-row: 2/span 1;
       grid-column: 3/span 1; }
@@ -369,10 +397,6 @@ body {
       .typography__explainer p span {
         color: #E3170A;
         font-weight: 700; }
-      .typography__explainer p > a:link, .typography__explainer p a:visited {
-        color: #E3170A !important;
-        font-weight: 700;
-        text-decoration: none; }
     .typography__explainer--1 {
       grid-row: 2/span 1;
       grid-column: 3/span 1; }
