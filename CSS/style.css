@@ -32,6 +32,7 @@ body {
   border: none;
   padding: 1rem 3rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition: all .2s; }
   .btn:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -52,7 +53,8 @@ body {
   background-color: #2b2d42;
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 5rem; }
   .colours-section__heading {
     grid-column: 1/-1;
     text-align: center;
@@ -74,16 +76,94 @@ body {
   justify-content: center; }
   .colours__quote {
     grid-column: 2/span 2;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: #FFB901;
     text-align: center;
     font-size: 2rem;
     font-family: "Fira Code", monospace;
-    margin-top: 5rem; }
+    margin-top: 0; }
   .colours__bullet-bg {
     width: 100%;
     padding-top: 100%;
     position: relative; }
+    .colours__bullet-bg--1 {
+      grid-row: 2/span 1;
+      grid-column: 2/span 1; }
+    .colours__bullet-bg--2 {
+      grid-row: 4/span 1;
+      grid-column: 2/span 1; }
+    .colours__bullet-bg--3 {
+      grid-row: 6/span 1;
+      grid-column: 2/span 1; }
+    .colours__bullet-bg--4 {
+      grid-row: 8/span 1;
+      grid-column: 2/span 1; }
+    .colours__bullet-bg--5 {
+      grid-row: 10/span 1;
+      grid-column: 2/span 1; }
+  .colours__bullet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    color: rgba(255, 255, 255, 0.8); }
+  .colours__bullet-number {
+    line-height: 7rem; }
+  .colours__bullet-text {
+    font-family: "Fira Code", monospace; }
+  .colours__explainer {
+    width: 100%;
+    height: auto; }
+    .colours__explainer p {
+      color: #FFB901;
+      font-family: "Fira Code", monospace; }
+      .colours__explainer p:not(:last-child) {
+        margin-bottom: 2rem; }
+      .colours__explainer p span {
+        color: #E3170A;
+        font-weight: 700; }
+      .colours__explainer p a:link, .colours__explainer p a:visited {
+        color: #E3170A;
+        font-weight: 700;
+        text-decoration: underline; }
+    .colours__explainer--1 {
+      grid-row: 2/span 1;
+      grid-column: 3/span 1; }
+    .colours__explainer--2 {
+      grid-row: 4/span 1;
+      grid-column: 3/span 1; }
+    .colours__explainer--3 {
+      grid-row: 6/span 1;
+      grid-column: 3/span 1; }
+    .colours__explainer--4 {
+      grid-row: 8/span 1;
+      grid-column: 3/span 1; }
+    .colours__explainer--5 {
+      grid-row: 10/span 1;
+      grid-column: 3/span 1; }
+  .colours__separator {
+    grid-column: 1/-1;
+    border-bottom: dashed 2px #FFB901; }
+    .colours__separator--1 {
+      grid-row: 3/span 1; }
+    .colours__separator--2 {
+      grid-row: 5/span 1; }
+    .colours__separator--3 {
+      grid-row: 7/span 1; }
+    .colours__separator--4 {
+      grid-row: 9/span 1; }
+    .colours__separator--5 {
+      grid-row: 11/span 1; }
+    .colours__separator:last-of-type {
+      border-bottom: solid 2px #FFB901; }
 
 .continue {
   height: 250vh;
@@ -217,7 +297,8 @@ body {
   background-color: #2b2d42;
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 5rem; }
   .typography-section__heading {
     grid-column: 1/-1;
     text-align: center;
@@ -239,12 +320,12 @@ body {
   justify-content: center; }
   .typography__quote {
     grid-column: 2/span 2;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: #FFB901;
     text-align: center;
     font-size: 2rem;
     font-family: "Fira Code", monospace;
-    margin-top: 5rem; }
+    margin-top: 0; }
   .typography__bullet-bg {
     width: 100%;
     padding-top: 100%;
@@ -265,12 +346,12 @@ body {
       grid-row: 10/span 1;
       grid-column: 2/span 1; }
   .typography__bullet {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
     border-radius: 50%;
     padding: 1.5rem 1rem;
@@ -321,3 +402,5 @@ body {
       grid-row: 9/span 1; }
     .typography__separator--5 {
       grid-row: 11/span 1; }
+    .typography__separator:last-of-type {
+      border-bottom: solid 2px #FFB901; }

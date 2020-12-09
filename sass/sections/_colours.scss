@@ -17,7 +17,119 @@
         @include section-content__bullet-bg;
         
         &--1 {
-            
+            grid-row: 2/span 1;
+            grid-column: 2/span 1;
+        }
+
+        &--2 {
+            grid-row: 4/span 1;
+            grid-column: 2/span 1;
+        }
+
+        &--3 {
+            grid-row: 6/span 1;
+            grid-column: 2/span 1;
+        }
+
+        &--4 {
+            grid-row: 8/span 1;
+            grid-column: 2/span 1;
+        }
+
+        &--5 {
+            grid-row: 10/span 1;
+            grid-column: 2/span 1;
+        }
+    }
+
+    &__bullet {
+        @include section-content__bullet;
+    }
+
+    &__bullet-number {
+        line-height: 7rem;
+    }
+
+    &__bullet-text {
+        font-family: $font-code;
+    }
+
+    &__explainer {
+        width: 100%;
+        height: auto;
+
+        & p {
+            color: $color-base;
+            font-family: $font-code;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            & span {
+                color: $color-base-x-dark;
+                font-weight: 700;
+            }
+
+            & a:link, a:visited {
+                color: $color-base-x-dark;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+
+        &--1 {
+            grid-row: 2/span 1;
+            grid-column: 3/span 1;
+        }
+
+        &--2 {
+            grid-row: 4/span 1;
+            grid-column: 3/span 1;
+        }
+
+        &--3 {
+            grid-row: 6/span 1;
+            grid-column: 3/span 1;
+        }
+
+        &--4 {
+            grid-row: 8/span 1;
+            grid-column: 3/span 1;
+        }
+
+        &--5 {
+            grid-row: 10/span 1;
+            grid-column: 3/span 1;
+        }
+    }
+
+    &__separator {
+        grid-column: 1/-1;
+        border-bottom: $separator-base-dashed;
+
+        &--1 {
+            grid-row: 3/span 1;
+        }
+
+        &--2 {
+            grid-row: 5/span 1;
+        }
+
+        &--3 {
+            grid-row: 7/span 1;
+        }
+
+        &--4 {
+            grid-row: 9/span 1;
+        }
+
+        &--5 {
+            grid-row: 11/span 1;
+        }
+
+        &:last-of-type {
+            border-bottom: $separator-base-solid;
         }
     }
 }
