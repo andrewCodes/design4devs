@@ -8,7 +8,10 @@ __Note__: this is an incomplete project and still under active development.
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Branching](#branching)
 * [Website Content](#website-content)
+* [Future Development](#future-development)
+* [Further Information](#further-information)
 
 ## General info
 This website is a collection of simple tips and guidelines to help web developers improve their design skills.
