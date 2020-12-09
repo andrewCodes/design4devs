@@ -44,17 +44,7 @@
     }
 
     &__bullet {
-        @include center-element;
-        
-        width: 100%;
-        height: 100%;
-        background-image: $gradient-dark;
-        border-radius: 50%;
-        padding: 1.5rem 1rem;
-        display: grid;
-        text-align: center;
-        align-content: center;
-        color: $color-white-8;
+        @include section-content__bullet;
     }
 
     &__bullet-number {

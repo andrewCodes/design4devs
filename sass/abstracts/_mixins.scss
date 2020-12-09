@@ -1,3 +1,6 @@
+/////////////////////////////
+// SECTION STYLES
+
 @mixin section-layout { //creates container for sections
     height: 100%;
     width: 100%;
@@ -44,6 +47,25 @@
     padding-top: 100%;
     position: relative;
 }
+
+@mixin section-content__bullet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: $gradient-dark;
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    color: $color-white-8;
+}
+
+/////////////////////////////
+// MISCELLANEOUS
 
 @mixin center-element { // centres element within its parent. N.B. must set position on parent element
     position: absolute;
