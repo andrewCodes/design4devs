@@ -27,4 +27,5 @@ $shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
 
 // SEPARATORS
 
-$separator-base: dashed 2px $color-base;
+$separator-base-dashed: dashed 2px $color-base;
+$separator-base-solid: solid 2px $color-base;

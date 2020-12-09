@@ -101,7 +101,7 @@
     
     &__separator {
         grid-column: 1/-1;
-        border-bottom: $separator-base;
+        border-bottom: $separator-base-dashed;
         
         &--1 {
             grid-row: 3/span 1;
@@ -121,6 +121,10 @@
 
         &--5 {
             grid-row: 11/span 1;
+        }
+
+        &:last-of-type {
+            border-bottom: $separator-base-solid;
         }
     }
 }

@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    padding-top: 5rem;
 }
 
 @mixin section-heading { // positions section heading
@@ -34,12 +35,12 @@
 
 @mixin section-content__quote { // sets styles and placement of section quote
     grid-column: 2/span 2;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: $color-base;
     text-align: center;
     font-size: 2rem;
     font-family: $font-code;
-    margin-top: 5rem;
+    margin-top: 0;
 }
 
 @mixin section-content__bullet-bg {
