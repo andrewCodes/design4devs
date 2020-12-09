@@ -56,6 +56,7 @@ Each development branch will have a precise and limited scope (a new section for
 
 As noted, this project is still under construction. Once completed the following changes will have been implemented:
 * All sections of Tips & Guidelines included
+* Responsive across all screen sizes
 * Navigation between sections
 * Newsletter sign up form will confirm successful submission of form, add the user's details to a database and send the user a welcome email
 
