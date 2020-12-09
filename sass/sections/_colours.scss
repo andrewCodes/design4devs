@@ -70,6 +70,12 @@
                 color: $color-base-x-dark;
                 font-weight: 700;
             }
+
+            & a:link, a:visited {
+                color: $color-base-x-dark;
+                font-weight: 700;
+                text-decoration: underline;
+            }
         }
 
         &--1 {
