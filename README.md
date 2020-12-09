@@ -30,6 +30,13 @@ $ npm run start
 
 Please check `package.json` for useful scripts.
 
+## Branching
+I only have one master branch, "__main__". __Main__ only ever contains deployable code. As development work takes place (for example adding a new section) this always happens on a separate branch taken from the most recent commit point on __main__. When work on a branch is complete and tested, the commits on that branch are merged back on to __main__ and the development branch is deleted.
+
+Only complete and tested work is merged into __main__.
+
+Each development branch will have a precise and limited scope (a new section for example).
+
 ## Website Content
 * Newsletter sign up form (currently not hooked up)
 * Tips & Guidelines
