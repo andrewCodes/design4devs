@@ -16,8 +16,17 @@ $color-base: #FFB901; // selective yellow
 $color-base-light: #FFD801; // gold web golden
 $color-base-x-light: #FDE900; // middle yellow
 
-$gradient-full: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base-x-light,.97));
-$gradient-dark: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base,.97));
+// GRADIENTS
+
+// slightly transparent / high opacity
+
+$gradient-full-h-o: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base-x-light,.97));
+$gradient-dark-h-o: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rgba($color-base,.97));
+
+// full opacity
+
+$gradient-full: linear-gradient(145deg, rgba($color-base-x-dark, 1) 10%, rgba($color-base-x-light, 1)); //
+$gradient-dark: linear-gradient(145deg, rgba($color-base-x-dark, 1) 10%, rgba($color-base, 1));
     
 // SHADOWS
 

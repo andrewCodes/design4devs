@@ -1,4 +1,4 @@
-.navigation {
+/*.navigation {
 
     &__button {
         background-color: $color-base;
@@ -7,14 +7,29 @@
         position: fixed;
         top: 6rem;
         right: 6rem;
+        border-radius: 50%;
         z-index: 2000;
+        box-shadow: $shadow;
         text-align: center;
         cursor: pointer;
+
+        &:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
+            top: -1rem;
+        }
+    }
+
+    &__button:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after { // this is to make the lines of the hamburger separate slightly when we hove the button
+        top: 1rem;
     }
 
     &__burger {
         position: relative;
         margin-top: 3.5rem;
+
 
         &,
         &::before,
@@ -42,19 +57,266 @@
         }
     }
 
-    &__nav {
+    &__bg {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-base-x-light, $color-base-x-dark);
+        z-index: 1000;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
 
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__list {
-
+        @include center-element;
+        list-style: none;
+        text-align: center;
+        width: 100%; //i've added this as the list was only taking up 50% of the available space (seemingly because of centering it) which meant the text was getting unnecessarily squashed
     }
 
     &__item {
-
+        margin: 1rem;
     }
 
     &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 230%;
+            transition: all .4s;
 
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-base;
+            transform: translateX(1rem);
+        }
+    }
+}*/
+
+.navigation {
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-image: $gradient-dark;
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 3rem;
+        right: 4rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: $shadow;
+        text-align: center;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-items: center;
+
+        /*@include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }*/
+    }
+
+    &__bg {
+        @include center-element;
+        height: 0;
+        width: 0;
+        position: fixed;
+        border-radius: 50%;
+        background-image: $gradient-full;
+        z-index: 1000;
+        transition: all .8s cubic-bezier(0.86, 0, 0.07, 1) .2s;
+    }
+
+    &__dot {
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 3rem;
+        right: 4rem;
+        border-radius: 50%;
+        background-image: $gradient-full;
+        z-index: 999;
+        transition: top .2s ease, all .2s ease, all .2s ease, opacity .2s ease .2s;
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__list {
+        @include center-element;
+        list-style: none;
+        text-align: center;
+        width: 100%; //i've added this as the list was only taking up 50% of the available space (seemingly because of centering it) which meant the text was getting unnecessarily squashed
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 230%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-base;
+            transform: translateX(1rem);
+        }
+    }
+
+    // FUNCTIONALITY
+
+    &__checkbox:checked ~ &__bg {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        //background-image: radial-gradient($color-base, $color-base-x-dark);
+    }
+
+    &__checkbox:checked ~ &__dot {
+        top: 50%;
+        right: calc(50% - 6rem);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    &__checkbox:checked ~ &__nav {
+        //opacity: 1;
+        width: 100%;
+    }
+
+    // ICON
+
+    &__icon {
+        width: 3rem;
+        height: .3rem;
+        background-color: $color-white-8;
+        transition: all .2s;
+        display: inline;
+
+        &--1 {
+
+        }
+
+        &--2 {
+            margin: .8rem 0;
+        }
+
+        &--3 {
+
+        }
+
+
+        /*&,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-base-x-dark;
+            display: inline-block; //display must be specified for pseufo element to actually appear
+        }
+
+        &::before,
+        &::after {
+            content: ""; //content must be specified for a pseudo element to actually appear
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.8rem; // moves the element above the span
+        }
+
+        &::after {
+            top: .8rem; //moves the element below the span
+        }*/
+    }
+
+    &__button:hover &__icon--1 { // this is to make the lines of the hamburger separate slightly when we hove the button
+        transform: translateY(-.2rem);
+    }
+
+    &__button:hover &__icon--3 { // this is to make the lines of the hamburger separate slightly when we hove the button
+        transform: translateY(.2rem);
+    }
+
+    &__checkbox:checked + &__button &__icon--2 { // this says: when the checkbox is checked we select the direct sibling (using the "+") then we select its child (the icon)... removes the middle line from the burger to turn it into an x
+        background-color: transparent;
+        margin: 0;
+        height: 0;
+    }
+
+    &__checkbox:checked + &__button &__icon--1 {
+
+        transform: rotate(-495deg) translateY(-.2rem);
+    }
+
+    &__checkbox:checked + &__button &__icon--3 {
+
+        transform: rotate(495deg) translateY(.2rem);
     }
 }
