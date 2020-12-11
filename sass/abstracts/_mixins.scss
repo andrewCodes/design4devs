@@ -66,11 +66,31 @@
 }
 
 /////////////////////////////
-// MISCELLANEOUS
+// POSITIONING
 
 @mixin center-element { // centres element within its parent. N.B. must set position on parent element
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/////////////////////////////
+// VIDEO BG
+
+@mixin bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .075;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //this is similar to background-size: cover. It will make the element (the video) fit the entire container whilst maintaining the aspect ratio. Anything that falls outside the parent element is automatically clipped.
+    }
 }

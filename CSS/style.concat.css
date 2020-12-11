@@ -47,28 +47,267 @@ body {
   color: rgba(255, 255, 255, 0.8);
   background-color: #E3170A; }
 
-.navigation__burger {
-  height: 7rem;
-  width: 7rem;
+/*.navigation {
+
+    &__button {
+        background-color: $color-base;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: $shadow;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
+            top: -1rem;
+        }
+    }
+
+    &__button:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after { // this is to make the lines of the hamburger separate slightly when we hove the button
+        top: 1rem;
+    }
+
+    &__burger {
+        position: relative;
+        margin-top: 3.5rem;
+
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-base-x-dark;
+            display: inline-block; //display must be specified for pseufo element to actually appear
+        }
+
+        &::before,
+        &::after {
+            content: ""; //content must be specified for a pseudo element to actually appear
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.8rem; // moves the element above the span
+        }
+
+        &::after {
+            top: .8rem; //moves the element below the span
+        }
+    }
+
+    &__bg {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-base-x-light, $color-base-x-dark);
+        z-index: 1000;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__list {
+        @include center-element;
+        list-style: none;
+        text-align: center;
+        width: 100%; //i've added this as the list was only taking up 50% of the available space (seemingly because of centering it) which meant the text was getting unnecessarily squashed
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 230%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-base;
+            transform: translateX(1rem);
+        }
+    }
+}*/
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
+  height: 6rem;
+  width: 6rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 2rem;
+  right: 3rem;
+  border-radius: 50%;
   z-index: 2000;
-  background-color: #E3170A; }
-  .navigation__burger, .navigation__burger::before, .navigation__burger::after {
-    width: 3rem;
-    height: 2px;
-    background-color: #E3170A;
-    display: inline-block; }
-  .navigation__burger::before, .navigation__burger::after {
-    content: "";
-    position: absolute;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+  /*@include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }*/ }
+
+.navigation__bg {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: .5rem;
+  background: #2b2d42;
+  z-index: 1000;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s, width 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.navigation__list {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  list-style: none; }
+
+.navigation__item {
+  margin: 1rem;
+  position: relative; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  letter-spacing: .4rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #E3170A, #FFB901 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out; }
+  .navigation__link:link:before, .navigation__link:visited:before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: 5px;
     left: 0;
-    transition: all .2s; }
-  .navigation__burger::before {
-    top: -.8rem; }
-  .navigation__burger::after {
-    top: .8rem; }
+    bottom: -3px;
+    z-index: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, #FFB901, #E3170A);
+    transition: all 0.3s ease-in-out; }
+  .navigation__link:link:hover, .navigation__link:link:active, .navigation__link:visited:hover, .navigation__link:visited:active {
+    background-position: 0%; }
+    .navigation__link:link:hover:before, .navigation__link:link:active:before, .navigation__link:visited:hover:before, .navigation__link:visited:active:before {
+      width: 100%; }
+
+.navigation__checkbox:checked ~ .navigation__bg {
+  height: 100%;
+  width: 100%;
+  border-radius: 0; }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  width: 3rem;
+  height: .3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .2s;
+  display: inline; }
+  .navigation__icon--2 {
+    margin: .8rem 0; }
+
+.navigation__button:hover .navigation__icon--1 {
+  transform: translateY(-0.2rem); }
+
+.navigation__button:hover .navigation__icon--3 {
+  transform: translateY(0.2rem); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon--2 {
+  background-color: transparent;
+  margin: 0;
+  height: 0; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon--1 {
+  transform: rotate(-495deg) translateY(-0.2rem); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon--3 {
+  transform: rotate(495deg) translateY(0.2rem); }
 
 .colours-section {
   height: 100%;
@@ -131,7 +370,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
+    background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
     border-radius: 50%;
     padding: 1.5rem 1rem;
     display: grid;
@@ -251,8 +490,11 @@ body {
     border: none;
     border-radius: .3rem;
     margin-right: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: border-bottom .2s; }
+    background-color: rgba(255, 255, 255, 0.8); }
+    .sign-up__input:focus {
+      outline: none;
+      background-color: #2b2d42;
+      color: #ffffff; }
   .sign-up__label {
     display: block;
     margin-left: 1rem;
@@ -290,11 +532,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
+    background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
     border-radius: 50%;
     padding: 5rem;
     display: grid;
-    text-align: center; }
+    text-align: center;
+    align-content: center; }
   .intro__heading {
     color: rgba(255, 255, 255, 0.8);
     align-self: end;
@@ -375,7 +618,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(255, 185, 1, 0.97));
+    background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
     border-radius: 50%;
     padding: 1.5rem 1rem;
     display: grid;
