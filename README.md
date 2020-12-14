@@ -63,14 +63,14 @@ As noted, this project is still under construction. Once completed the following
 ## Further Information
 
 ### Author
-Me - Andrew Long
-[Me on Twitter](https://twitter.com/_TooAndrew)
+Me - Andrew Long\
+[Me on Twitter](https://twitter.com/_TooAndrew)\
 [Me on LinkedIn](https://linkedin.com/andrewrklong)
 
 ### Inspiration
-Jonas Schmedtmann's "Web Design for Wed Developers" short video course on Udemy
-[Course link](https://www.udemy.com/course/web-design-secrets/)
-[Jonas on Twitter](https://twitter.com/jonasschmedtman)
+Jonas Schmedtmann's "Web Design for Wed Developers" short video course on Udemy\
+[Course link](https://www.udemy.com/course/web-design-secrets/)\
+[Jonas on Twitter](https://twitter.com/jonasschmedtman)\
 [Website](https://codingheroes.io)
 
 ### Using this project
