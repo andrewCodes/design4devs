@@ -74,7 +74,7 @@
         <header class="header">
             <a href="index.html" class="header__logo-holder">
                 <img src="img/Logos/D4D-logo-circle-light.png" alt="Design 4 Devs logo" class="header__logo">
-           </a>
+            </a>
             <div class="header-content">
                 <h1 class="heading-1 header-content__title">Web Design<br>for Web Developers</h1>
                 <form class="sign-up">
@@ -414,36 +414,109 @@
                     <p>Text can go directly onto an image provided the <span>contrast</span> between the image and the text is significant enough.</p>
                     <p>If the contrast is too low the text will be hard to read and your site will fail accessibility tests.</p>
                     <p>You can check for colour accessibility using this <a href="https://coolors.co" target="_blank">background image a11y check <i class="fas fa-external-link-alt"></i></a> tool.</p>
+                    <div class="explainer-buttons btn-group">
+                        <button id="images__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                    </div>
                 </div>
                 <div class="images__separator images__separator--1"></div>
+
+                <!-- POINT 1 EXAMPLE MODAL -->
+
+                <div id="images-modal-ex1" class="modal">
+                    <span id="modal__close--images-ex1" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <img src="img/Images/too-light.jpg" alt="image of a person surfing with too little contrast between text and image" class="modal__img">
+                        <p class="modal__caption">Too little contrast between the text and the image makes the text difficult to read</p>
+                    </div>
+                </div>
 
                 <!-- POINT 2 -->
 
                 <div class="images__bullet-bg images__bullet-bg--2">
                     <div class="images__bullet">
                         <h2 class="images__bullet-number heading-1">2</h2>
-                        <p class="images__bullet-text">Use a tool if you need more images</p>
+                        <p class="images__bullet-text">Overlay the image</p>
                     </div>
                 </div>
                 <div class="images__explainer images__explainer--2">
-                    <p>You may find you need a selection of different images for your website. If you do, use a tool to select your <span>colour palette</span>.</p>
-                    <p>Using a tool to create your colour palette will ensure you do not use images that clash or don't look good together.</p>
-                    <p>I like to use <a href="https://coolors.co" target="_blank">Coolors <i class="fas fa-external-link-alt"></i></a> but there are plenty of free tools available.</p>
+                    <p>A semi-transparent <span>black</span> overlay is the standard way of doing this. It darkens the image and allows light text to stand out.</p>
+                    <p>You can also a colour to overlay an image. You should use the <span>base colour</span> of your website to ensure it fits with the overall design.</p>
+                    <p>Another way to use an overlay is as a <span>coloured gradient</span>. Consider using a gradient from the dark version of your base colour to the light version of it.</p>
+                    <div class="explainer-buttons btn-group">
+                        <button id="images__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                        <button id="images__code2-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                    </div>
                 </div>
                 <div class="images__separator images__separator--2"></div>
+
+                <!-- POINT 2 EXAMPLE MODAL -->
+
+                <div id="images-modal-ex2" class="modal">
+                    <span id="modal__close--images-ex2" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <img src="img/Images/too-light.jpg" alt="image of a person surfing with too little contrast between text and image" class="modal__img">
+                        <p class="modal__caption">Too little contrast between the text and the image makes the text difficult to read</p>
+                    </div>
+                </div>
+
+                <!-- POINT 2 CODE MODAL -->
+
+                <div id="images-modal-code2" class="modal">
+                    <span id="modal__close--images-code2" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <h3 class="modal__heading">Overlay the Image</h3>
+                        <div class="code-block">
+                            <code class="code-block__code">
+                                <span class="code-block__code--selector">.darken </span>&#123;<br>
+                                <span class="code-block__code--property">&nbsp;&nbsp;&nbsp;&nbsp;background-image</span><span class="code-block__code--punc">:</span>
+                                <span class="code-block__code--value">linear-gradient</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--value">rgba</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">.5</span><!--
+--><span class="code-block__code--punc">),</span><!--
+--><span class="code-block__code--value">rgba</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">.5</span><!--
+--><span class="code-block__code--punc">)),</span><!--
+--><span class="code-block__code--value">url</span><!--
+--><span class="code-block__code--punc">(YOUR IMAGE HERE)</span><!--
+--><span class="code-block__code--punc">;</span><!----><br>
+                                <span class="code-block__code--punc">&#125;</span>
+                            </code>
+                        </div>
+                        <p class="modal__caption">This will put a semi-transparent black overlay on top of your background image so light text will be clearly readable even on a light image.</p>
+                        <p class="modal__caption">Example: <a href="https://codepen.io/the_real_andrew/pen/MWjpqYQ" target="_blank" class="modal__caption--link">https://codepen.io/the_real_andrew/pen/MWjpqYQ</a></p>
+                    </div>
+                </div>
 
                 <!-- POINT 3 -->
 
                 <div class="images__bullet-bg images__bullet-bg--3">
                     <div class="images__bullet">
                         <h2 class="images__bullet-number heading-1">3</h2>
-                        <p class="images__bullet-text">Use colour to draw attention</p>
+                        <p class="images__bullet-text">Put text in a box</p>
                     </div>
                 </div>
                 <div class="images__explainer images__explainer--3">
-                    <p>Colour can be a great way of making people <span>take notice</span> of certain parts of your website.</p>
-                    <p>Not everything on your site is of equal importance. Using colour can highlight the more important parts.</p>
-                    <p>It is a good idea to use colour to accentuate <span>CTAs and buttons</span>.</p>
+                    <p>If you do not want to overlay your image to get text to stand out, you can use <span>text boxes</span> which sit on the image.</p>
+                    <p>The box should have a <span>slightly transparent</span> background colour so the image can be made out through the box.</p>
+                    <p>Doing so will make the image and the text boxes feel more like a single element.</p>
                 </div>
                 <div class="images__separator images__separator--3"></div>
 
@@ -452,13 +525,13 @@
                 <div class="images__bullet-bg images__bullet-bg--4">
                     <div class="images__bullet">
                         <h2 class="images__bullet-number heading-1">4</h2>
-                        <p class="images__bullet-text">Avoid using black in your design</p>
+                        <p class="images__bullet-text">Blur the image</p>
                     </div>
                 </div>
                 <div class="images__explainer images__explainer--4">
-                    <p>Black rarely occurs in the <span>real world</span>. The night sky... actually very dark blue. Your black dog... actually very dark brown.</p>
-                    <p>Because of this, using black in your designs can look <span>unnatural</span> and a bit odd. Try a dark grey or other dark colour instead.</p>
-                    <p>The black in my design? Actually a very dark indigo called <span>Space Cadet</span> (#2B2D42).</p>
+                    <p>This has a similar effect to an overlay and makes the text easier to read.</p>
+                    <p>You can either <span>blur the whole image</span> or put text over a <span>blurred section</span> of an in-focus image.</p>
+                    <p>If placing text over a blurred section of an image, be careful to ensure your text stays on that section on all screen sizes.</p>
                 </div>
                 <div class="images__separator images__separator--4"></div>
 
@@ -467,13 +540,13 @@
                 <div class="images__bullet-bg images__bullet-bg--5">
                     <div class="images__bullet">
                         <h2 class="images__bullet-number heading-1">5</h2>
-                        <p class="images__bullet-text">Use images wisely</p>
+                        <p class="images__bullet-text">The floor fade</p>
                     </div>
                 </div>
                 <div class="images__explainer images__explainer--5">
-                    <p>images can evoke <span>emotional responses</span> in people and have specific associations.</p>
-                    <p>Ever wondered why Twitter, Facebook and LinkedIn all use blue as their base colour? It's because blue gives the impression something is trustworthy.</p>
-                    <p><span>Red</span>: power and excitement<br><span>Orange</span>: cheerful and friendly<br><span>Yellow</span>: energetic and happy<br><span>Green</span>: nature and harmony<br><span>Blue</span>: trustworthy and professional<br><span>Purple</span>: nobilty and wealth<br><span>Pink</span>: romance and love<br><span>Brown</span>: reliability and relaxation</p>
+                    <p>This is where we create a gradient overlay that runs from the top to the bottom of an image. The gradient runs from completely transparent to semi-transparent black.</p>
+                    <p>As the image fades towards black at the bottom, light colour text is placed on the darker section.</p>
+                    <p>When done well the floor fade can be almost unnoticeable.</p>
                 </div>
                 <div class="images__separator images__separator--5"></div>
 
@@ -481,65 +554,75 @@
 
             <!-- IMAGES GALLERY -->
 
-            <aside class="gallery-images gallery">
+            <!--aside class="gallery-images gallery">
 
-                <!-- (figure.gallery__item.gallery__item--$>img.gallery__img[src="img/gal-$.jpeg"][alt="House $"])*14 -->
-
-                <figure class="gallery-images__item gallery-images__item--1">
-                    <img src="img/Images/gal-1.jpg" alt="images image 1" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--2">
-                    <img src="img/Images/gal-2.jpg" alt="images image 2" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--3">
-                    <img src="img/Images/gal-3.jpg" alt="images image 3" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--4">
-                    <img src="img/Images/gal-4.jpg" alt="images image 4" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--5">
-                    <img src="img/Images/gal-5.jpg" alt="images image 5" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--6">
-                    <img src="img/Images/gal-6.jpg" alt="images image 6" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--7">
-                    <img src="img/Images/gal-7.jpg" alt="images image 7" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--8">
-                    <img src="img/Images/gal-8.jpg" alt="images image 8" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--9">
-                    <img src="img/Images/gal-9.jpg" alt="images image 9" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--10">
-                    <img src="img/Images/gal-10.jpg" alt="images image 10" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--11">
-                    <img src="img/Images/gal-11.jpg" alt="images image 11" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--12">
-                    <img src="img/Images/gal-12.jpg" alt="images image 12" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--13">
-                    <img src="img/Images/gal-13.jpg" alt="images image 13" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--14">
-                    <img src="img/Images/gal-14.png" alt="images image 14" class="gallery-images__img">
-                </figure>
-                <figure class="gallery-images__item gallery-images__item--15">
-                    <img src="img/Images/gal-15.jpg" alt="images image 14" class="gallery-images__img">
-                </figure>
-            </aside>
+<figure class="gallery-images__item gallery-images__item--1">
+<img src="img/Images/gal-1.jpg" alt="images image 1" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--2">
+<img src="img/Images/gal-2.jpg" alt="images image 2" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--3">
+<img src="img/Images/gal-3.jpg" alt="images image 3" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--4">
+<img src="img/Images/gal-4.jpg" alt="images image 4" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--5">
+<img src="img/Images/gal-5.jpg" alt="images image 5" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--6">
+<img src="img/Images/gal-6.jpg" alt="images image 6" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--7">
+<img src="img/Images/gal-7.jpg" alt="images image 7" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--8">
+<img src="img/Images/gal-8.jpg" alt="images image 8" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--9">
+<img src="img/Images/gal-9.jpg" alt="images image 9" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--10">
+<img src="img/Images/gal-10.jpg" alt="images image 10" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--11">
+<img src="img/Images/gal-11.jpg" alt="images image 11" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--12">
+<img src="img/Images/gal-12.jpg" alt="images image 12" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--13">
+<img src="img/Images/gal-13.jpg" alt="images image 13" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--14">
+<img src="img/Images/gal-14.png" alt="images image 14" class="gallery-images__img">
+</figure>
+<figure class="gallery-images__item gallery-images__item--15">
+<img src="img/Images/gal-15.jpg" alt="images image 14" class="gallery-images__img">
+</figure>
+</aside-->
         </section>
 
-<!--div class="test-bg">
-    <p class="test">D<br>D4D<br>D</p>
+        <!--div class="test-bg">
+<p class="test">D<br>D4D<br>D</p>
 </div-->
         <!-- JQUERY -->
 
 
         <!-- JS -->
+
+        <script type="text/javascript">
+            imagesModalEx1();
+            imagesModalCode2();
+            imagesModalEx2();
+            imagesModalCode3();
+            imagesModalEx3();
+            imagesModalCode4();
+            imagesModalEx4();
+            imagesModalCode5();
+            imagesModalEx5();
+        </script>
 
     </body>
 </html>

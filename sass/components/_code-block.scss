@@ -1,0 +1,29 @@
+.code-block {
+    background-color: #eee;
+    border: solid .1rem #ddd;
+    border-radius: .3rem;
+    padding: 2rem;
+
+    &__code {
+
+        &--selector {
+            color: blue;
+        }
+
+        &--property {
+            color: blueviolet;
+        }
+
+        &--value {
+            color: orange;
+        }
+
+        &--punc {
+            color: black;
+        }
+
+        &--number {
+            color: forestgreen;
+        }
+    }
+}

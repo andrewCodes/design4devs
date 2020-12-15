@@ -280,6 +280,10 @@
         }
     }
 
+    &__button:hover &__icon {
+        background-color: $color-white;
+    }
+
     &__button:hover &__icon--1 { // this is to make the lines of the hamburger separate slightly when we hove the button
         transform: translateY(-.2rem);
     }

@@ -1,0 +1,71 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba($color-dark,.95);
+
+    &__content {
+        @include center-element;
+        background-color: #fefefe;
+        border-radius: .3rem;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    &__close {
+        position: absolute;
+        top: 4.5rem;
+        right: 4.5rem;
+        color: $color-white-8;
+        font-size: 5rem;
+        line-height: 0;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 80%;
+        margin: auto;
+        border-radius: .3rem;
+        box-shadow: $shadow;
+    }
+
+    &__caption {
+        text-align: center;
+        letter-spacing: .1rem;
+        font-size: 1.8rem;
+        color: $color-dark;
+        margin: 2rem auto 1rem auto;
+        width: 75ch;
+
+        &--link,
+        &--link:link,
+        &--link:visited {
+            color: $color-base-x-dark;
+            font-weight: 500;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        color: $color-dark;
+        margin-bottom: 2rem;
+    }
+}
