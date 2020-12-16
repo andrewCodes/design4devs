@@ -51,13 +51,15 @@
         font-size: 1.8rem;
         color: $color-dark;
         margin: 2rem auto 1rem auto;
-        width: 75ch;
+        max-width: 75ch;
 
         &--link,
         &--link:link,
         &--link:visited {
             color: $color-base-x-dark;
+            font-size: 1.6rem;
             font-weight: 500;
+            font-family: $font-code;
         }
     }
 

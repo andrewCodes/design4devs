@@ -79,7 +79,22 @@ body {
   background-color: #eee;
   border: solid .1rem #ddd;
   border-radius: .3rem;
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+  .code-block__copy-btn {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background-color: #f6f6f6;
+    border: solid .1rem #ddd;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 .3rem 0 .3rem;
+    font-family: "Fira Code", monospace;
+    font-size: 1.3rem;
+    color: #2b2d42;
+    padding: .75rem 1rem; }
   .code-block__code--selector {
     color: blue; }
   .code-block__code--property {
@@ -144,10 +159,12 @@ body {
     font-size: 1.8rem;
     color: #2b2d42;
     margin: 2rem auto 1rem auto;
-    width: 75ch; }
+    max-width: 75ch; }
     .modal__caption--link, .modal__caption--link:link, .modal__caption--link:visited {
       color: #E3170A;
-      font-weight: 500; }
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "Fira Code", monospace; }
   .modal__heading {
     text-align: center;
     font-size: 3rem;
