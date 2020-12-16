@@ -14,26 +14,31 @@ $(document).ready(function() {
 
 
 ///////////////////////////
-// COPY TO CLIPBOARD BUTTON
+// COPY TO CLIPBOARD BUTTON - there will be a better (DRY-er) way of doing this. To be revisited
 
 function copyCodeI1() {
     //get the element containing text to be copied
     var copyText = document.getElementById("code-block__textarea--images-code2");
 
     //get the copy button
-    var copyBtn = document.getElementById("copy-btn--images-code2");
+    var copyBtn = document.getElementById("code-block__copy-btn--images-code2");
 
-    // When the user clicks on the button, copy the text
+    // When the user clicks on the copy button, copy the text and change button text to "Copied"
     copyBtn.onclick = function() {
         copyText.select();
         copyText.setSelectionRange(0, 99999);
         document.execCommand("copy");
+        copyBtn.innerHTML = "Copied";
+        setTimeout(resetText, 2000);
+        function resetText() {
+            copyBtn.innerHTML = "Copy";
+        }
     }
 }
 
 
 ///////////////////////////
-// MODAL
+// MODAL - there will be a better (DRY-er) way of doing this. To be revisited
 
 // Images Modals
 
