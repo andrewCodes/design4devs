@@ -16,7 +16,7 @@ $(document).ready(function() {
 ///////////////////////////
 // COPY TO CLIPBOARD BUTTON - there will be a better (DRY-er) way of doing this. To be revisited
 
-function copyCodeI1() {
+function copyCodeI2() {
     //get the element containing text to be copied
     var copyText = document.getElementById("code-block__textarea--images-code2");
 
@@ -34,7 +34,23 @@ function copyCodeI1() {
             copyBtn.innerHTML = "Copy";
         }
     }
-}
+};
+
+function copyCodeI3() {
+    var copyText = document.getElementById("code-block__textarea--images-code3");
+    var copyBtn = document.getElementById("code-block__copy-btn--images-code3");
+
+    copyBtn.onclick = function() {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        copyBtn.innerHTML = "Copied";
+        setTimeout(resetText, 2000);
+        function resetText() {
+            copyBtn.innerHTML = "Copy";
+        }
+    }
+};
 
 
 ///////////////////////////
@@ -94,6 +110,46 @@ function imagesModalCode2() {
     var modal = document.getElementById("images-modal-code2");
     var btn = document.getElementById("images__code2-btn");
     var span = document.getElementById("modal__close--images-code2");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function imagesModalEx3() {
+    var modal = document.getElementById("images-modal-ex3");
+    var btn = document.getElementById("images__ex3-btn");
+    var span = document.getElementById("modal__close--images-ex3");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function imagesModalCode3() {
+    var modal = document.getElementById("images-modal-code3");
+    var btn = document.getElementById("images__code3-btn");
+    var span = document.getElementById("modal__close--images-code3");
 
     btn.onclick = function() {
         modal.style.display = "block";
