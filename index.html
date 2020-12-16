@@ -469,8 +469,13 @@
                     <div class="modal__content">
                         <h3 class="modal__heading">Overlay the Image</h3>
                         <div class="code-block">
-                           <button id="copy-btn--images-code2" class="btn code-block__copy-btn">Copy</button>
-
+                            <button id="copy-btn--images-code2" class="btn code-block__copy-btn">
+                                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                Copy
+                            </button>
+                            <textarea name="code-block__textarea--images-code2" id="code-block__textarea--images-code2" cols="30" rows="10" class="code-block__textarea">.darken {
+                                background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(YOUR IMAGE HERE);
+                                }</textarea>
                             <code id="code-block__code--images-code2" class="code-block__code">
                                 <span class="code-block__code--selector">.darken </span>&#123;<br>
                                 <span class="code-block__code--property">&nbsp;&nbsp;&nbsp;&nbsp;background-image</span><span class="code-block__code--punc">:</span>
@@ -618,12 +623,13 @@
             imagesModalEx1();
             imagesModalCode2();
             imagesModalEx2();
-            imagesModalCode3();
-            imagesModalEx3();
-            imagesModalCode4();
-            imagesModalEx4();
-            imagesModalCode5();
-            imagesModalEx5();
+            //imagesModalCode3();
+            //imagesModalEx3();
+            //imagesModalCode4();
+            //imagesModalEx4();
+            //imagesModalCode5();
+            //imagesModalEx5();
+            copyCodeI1();
         </script>
 
     </body>

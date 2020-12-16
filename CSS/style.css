@@ -95,6 +95,14 @@ body {
     font-size: 1.3rem;
     color: #2b2d42;
     padding: .75rem 1rem; }
+    .code-block__copy-btn:hover {
+      background-color: #FDE900; }
+    .code-block__copy-btn:active {
+      background-color: #FC9D01; }
+  .code-block__textarea {
+    opacity: 0;
+    height: 0px;
+    width: 0px; }
   .code-block__code--selector {
     color: blue; }
   .code-block__code--property {

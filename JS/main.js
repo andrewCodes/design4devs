@@ -13,7 +13,23 @@ $(document).ready(function() {
 
 
 
+///////////////////////////
+// COPY TO CLIPBOARD BUTTON
 
+function copyCodeI1() {
+    //get the element containing text to be copied
+    var copyText = document.getElementById("code-block__textarea--images-code2");
+
+    //get the copy button
+    var copyBtn = document.getElementById("copy-btn--images-code2");
+
+    // When the user clicks on the button, copy the text
+    copyBtn.onclick = function() {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+    }
+}
 
 
 ///////////////////////////

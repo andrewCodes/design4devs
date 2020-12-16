@@ -19,6 +19,20 @@
         font-size: 1.3rem;
         color: $color-dark;
         padding: .75rem 1rem;
+
+        &:hover {
+            background-color: $color-base-x-light;
+        }
+
+        &:active {
+            background-color: $color-base-dark;
+        }
+    }
+
+    &__textarea {
+        opacity: 0;
+        height: 0px;
+        width: 0px;
     }
 
     &__code {
