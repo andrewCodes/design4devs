@@ -426,8 +426,11 @@
                     <span id="modal__close--images-ex1" class="modal__close">&times;</span>
                     <!-- Modal content -->
                     <div class="modal__content">
-                        <img src="img/Images/too-light.jpg" alt="image of a person surfing with too little contrast between text and image" class="modal__img">
-                        <p class="modal__caption">Too little contrast between the text and the image makes the text difficult to read</p>
+                        <figure>
+                            <img src="img/Images/too-light.jpg" alt="image of a person surfing with too little contrast between text and image" class="modal__img">
+                            <figcaption class="modal__caption">Too little contrast between the text and the image makes the text difficult to read</figcaption>
+                        </figure>
+
                     </div>
                 </div>
 
@@ -456,8 +459,11 @@
                     <span id="modal__close--images-ex2" class="modal__close">&times;</span>
                     <!-- Modal content -->
                     <div class="modal__content">
-                        <img src="img/Images/dark-overlay2.jpg" alt="light text over a light image with a dark overlay" class="modal__img">
-                        <p class="modal__caption">A semi-transparent black overlay on a light background image makes light text easy to read</p>
+                        <figure>
+                            <img src="img/Images/dark-overlay2.jpg" alt="light text over a light image with a dark overlay" class="modal__img">
+                            <figcaption class="modal__caption">A semi-transparent black overlay on a light background image makes light text easy to read</figcaption>
+                        </figure>
+
                     </div>
                 </div>
 
@@ -488,7 +494,7 @@
 --><span class="code-block__code--punc">,</span><!--
 --><span class="code-block__code--number">.5</span><!--
 --><span class="code-block__code--punc">),</span><!--
---><span class="code-block__code--value"><wbr>rgba</span><!--
+--><span class="code-block__code--value"> rgba</span><!--
 --><span class="code-block__code--punc">(</span><!--
 --><span class="code-block__code--number">0</span><!--
 --><span class="code-block__code--punc">,</span><!--
@@ -498,7 +504,7 @@
 --><span class="code-block__code--punc">,</span><!--
 --><span class="code-block__code--number">.5</span><!--
 --><span class="code-block__code--punc">)),</span><!--
---><span class="code-block__code--value"><wbr>url</span><!--
+--><span class="code-block__code--value"> url</span><!--
 --><span class="code-block__code--punc">(YOUR IMAGE HERE)</span><!--
 --><span class="code-block__code--punc">;</span><!----><br>
                                 <span class="code-block__code--punc">&#125;</span>
@@ -528,16 +534,17 @@
                 </div>
                 <div class="images__separator images__separator--3"></div>
 
-
-
                 <!-- POINT 3 EXAMPLE MODAL -->
 
                 <div id="images-modal-ex3" class="modal">
                     <span id="modal__close--images-ex3" class="modal__close">&times;</span>
                     <!-- Modal content -->
                     <div class="modal__content">
-                        <img src="img/Images/text-in-box3.jpg" alt="background image with no overlay. text is held in coloured text boxes" class="modal__img">
-                        <p class="modal__caption">Using semi-transparent text boxes instead of an overlay is another great way of showing off an image whilst keeping text readable</p>
+                        <figure>
+                            <img src="img/Images/text-in-box3.jpg" alt="background image with no overlay. text is held in coloured text boxes" class="modal__img">
+                            <figcaption class="modal__caption">Using semi-transparent text boxes instead of an overlay is another great way of showing off an image whilst keeping text readable</figcaption>
+                        </figure>
+
                     </div>
                 </div>
 
@@ -602,8 +609,60 @@
                     <p>This has a similar effect to an overlay and makes the text easier to read.</p>
                     <p>You can either <span>blur the whole image</span> or put text over a <span>blurred section</span> of an in-focus image.</p>
                     <p>If placing text over a blurred section of an image, be careful to ensure your text stays on that section on all screen sizes.</p>
+                    <div class="explainer-buttons btn-group">
+                        <button id="images__ex4-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                        <button id="images__code4-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                    </div>
                 </div>
                 <div class="images__separator images__separator--4"></div>
+
+                <!-- POINT 4 EXAMPLE MODAL -->
+
+                <div id="images-modal-ex4" class="modal">
+                    <span id="modal__close--images-ex4" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <figure>
+                            <img src="img/Images/blur-image1.jpg" alt="blurred background image with light colour text" class="modal__img">
+                            <figcaption class="modal__caption">Blurring an image or a section of an image can make text easier to read</figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
+                <!-- POINT 4 CODE MODAL -->
+
+                <div id="images-modal-code4" class="modal">
+                    <span id="modal__close--images-code4" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <h3 class="modal__heading">Blur the Image</h3>
+                        <div class="code-block">
+                            <button id="code-block__copy-btn--images-code4" class="btn code-block__copy-btn">Copy</button>
+                            <textarea name="code-block__textarea--images-code4" id="code-block__textarea--images-code4" cols="30" rows="10" class="code-block__textarea">.image-blur {
+                                background-image: url(YOUR IMAGE HERE);
+                                filter: blur(8px);
+                                }</textarea>
+                            <code id="code-block__code--images-code4" class="code-block__code">
+                                <span class="code-block__code--selector">.image-blur </span>&#123;<br>
+                                <span class="code-block__code--property">&nbsp;&nbsp;&nbsp;&nbsp;background-image</span><!--
+--><span class="code-block__code--punc">:</span>
+                                <span class="code-block__code--value">url</span><!--
+--><span class="code-block__code--punc">(YOUR IMAGE HERE);</span><!--
+--><br>
+                                <span class="code-block__code--property">&nbsp;&nbsp;&nbsp;&nbsp;filter</span><!--
+--><span class="code-block__code--punc">:</span>
+                                <span class="code-block__code--value">blur</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--number">8px</span><!--
+--><span class="code-block__code--punc">);</span><!----><br>
+                                <span class="code-block__code--punc">&#125;</span>
+                            </code>
+                        </div>
+                        <p class="modal__caption">This will blur the background image. Try adjusting the size of the blur to see what looks best with your image.</p>
+                        <p class="modal__caption"><a href="https://codepen.io/the_real_andrew/pen/mdrmzmM" target="_blank" class="modal__caption--link">View example on CodePen</a></p>
+                    </div>
+                </div>
 
                 <!-- POINT 5 -->
 
@@ -615,63 +674,131 @@
                 </div>
                 <div class="images__explainer images__explainer--5">
                     <p>This is where we create a gradient overlay that runs from the top to the bottom of an image. The gradient runs from completely transparent to semi-transparent black.</p>
-                    <p>As the image fades towards black at the bottom, light colour text is placed on the darker section.</p>
+                    <p>As the image <span>fades towards black</span> at the bottom, light colour text is placed on the darker section.</p>
                     <p>When done well the floor fade can be almost unnoticeable.</p>
+                    <div class="explainer-buttons btn-group">
+                        <button id="images__ex5-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                        <button id="images__code5-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                    </div>
                 </div>
                 <div class="images__separator images__separator--5"></div>
+
+                <!-- POINT 5 EXAMPLE MODAL -->
+
+                <div id="images-modal-ex5" class="modal">
+                    <span id="modal__close--images-ex5" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <figure>
+                            <img src="img/Images/floor-fade-yes.jpg" alt="background image with overlay that starts transparent and fade towards black at the bottom. light text is then placed on the dark section." class="modal__img">
+                            <figcaption class="modal__caption">Using the floor fade can be almost unnoticable when done well</figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
+                <!-- POINT 5 CODE MODAL -->
+
+                <div id="images-modal-code5" class="modal">
+                    <span id="modal__close--images-code5" class="modal__close">&times;</span>
+                    <!-- Modal content -->
+                    <div class="modal__content">
+                        <h3 class="modal__heading">The Floor Fade</h3>
+                        <div class="code-block">
+                            <button id="code-block__copy-btn--images-code5" class="btn code-block__copy-btn">Copy</button>
+                            <textarea name="code-block__textarea--images-code5" id="code-block__textarea--images-code5" cols="30" rows="10" class="code-block__textarea">.floor-fade {
+                                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)), url(YOUR IMAGE HERE);
+                                }</textarea>
+                            <code id="code-block__code--images-code5" class="code-block__code">
+                                <span class="code-block__code--selector">.floor-fade </span>&#123;<br>
+                                <span class="code-block__code--property">&nbsp;&nbsp;&nbsp;&nbsp;background-image</span><span class="code-block__code--punc">:</span>
+                                <span class="code-block__code--value">linear-gradient</span><!--
+--><span class="code-block__code--punc"><wbr>(</span><!--
+--><span class="code-block__code--value">to bottom</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--value"> rgba</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">),</span><!--
+--><span class="code-block__code--value"> rgba</span><!--
+--><span class="code-block__code--punc">(</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">0</span><!--
+--><span class="code-block__code--punc">,</span><!--
+--><span class="code-block__code--number">.6</span><!--
+--><span class="code-block__code--punc">)),</span><!--
+--><span class="code-block__code--value"> url</span><!--
+--><span class="code-block__code--punc">(YOUR IMAGE HERE)</span><!--
+--><span class="code-block__code--punc">;</span><!----><br>
+                                <span class="code-block__code--punc">&#125;</span>
+                            </code>
+                        </div>
+                        <p class="modal__caption">This will darken the background image towards the bottom. Light text can then be placed on the darkened section.</p>
+                        <p class="modal__caption"><a href="https://codepen.io/the_real_andrew/pen/eYdWbJV" target="_blank" class="modal__caption--link">View example on CodePen</a></p>
+                    </div>
+                </div>
 
             </div>
 
             <!-- IMAGES GALLERY -->
 
-            <!--aside class="gallery-images gallery">
+            <aside class="gallery-images gallery">
 
-<figure class="gallery-images__item gallery-images__item--1">
-<img src="img/Images/gal-1.jpg" alt="images image 1" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--2">
-<img src="img/Images/gal-2.jpg" alt="images image 2" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--3">
-<img src="img/Images/gal-3.jpg" alt="images image 3" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--4">
-<img src="img/Images/gal-4.jpg" alt="images image 4" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--5">
-<img src="img/Images/gal-5.jpg" alt="images image 5" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--6">
-<img src="img/Images/gal-6.jpg" alt="images image 6" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--7">
-<img src="img/Images/gal-7.jpg" alt="images image 7" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--8">
-<img src="img/Images/gal-8.jpg" alt="images image 8" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--9">
-<img src="img/Images/gal-9.jpg" alt="images image 9" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--10">
-<img src="img/Images/gal-10.jpg" alt="images image 10" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--11">
-<img src="img/Images/gal-11.jpg" alt="images image 11" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--12">
-<img src="img/Images/gal-12.jpg" alt="images image 12" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--13">
-<img src="img/Images/gal-13.jpg" alt="images image 13" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--14">
-<img src="img/Images/gal-14.png" alt="images image 14" class="gallery-images__img">
-</figure>
-<figure class="gallery-images__item gallery-images__item--15">
-<img src="img/Images/gal-15.jpg" alt="images image 14" class="gallery-images__img">
-</figure>
-</aside-->
+                <figure class="gallery-images__item gallery-images__item--1">
+                    <img src="img/Images/gal-1.jpg" alt="images image 1" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--2">
+                    <img src="img/Images/gal-2.jpg" alt="images image 2" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--3">
+                    <img src="img/Images/gal-3.jpeg" alt="images image 3" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--4">
+                    <img src="img/Images/gal-4.jpg" alt="images image 4" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--5">
+                    <img src="img/Images/gal-5.jpeg" alt="images image 5" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--6">
+                    <img src="img/Images/gal-6.jpeg" alt="images image 6" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--7">
+                    <img src="img/Images/gal-7.jpeg" alt="images image 7" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--8">
+                    <img src="img/Images/gal-8.png" alt="images image 8" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--9">
+                    <img src="img/Images/gal-9.jpeg" alt="images image 9" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--10">
+                    <img src="img/Images/gal-10.jpeg" alt="images image 10" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--11">
+                    <img src="img/Images/gal-11.jpeg" alt="images image 11" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--12">
+                    <img src="img/Images/gal-12.jpg" alt="images image 12" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--13">
+                    <img src="img/Images/gal-13.jpeg" alt="images image 13" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--14">
+                    <img src="img/Images/gal-14.jpg" alt="images image 14" class="gallery-images__img">
+                </figure>
+                <figure class="gallery-images__item gallery-images__item--15">
+                    <img src="img/Images/gal-15.jpeg" alt="images image 15" class="gallery-images__img">
+                </figure>
+            </aside>
         </section>
 
         <!--div class="test-bg">
@@ -688,12 +815,14 @@
             imagesModalEx2();
             imagesModalCode3();
             imagesModalEx3();
-            //imagesModalCode4();
-            //imagesModalEx4();
-            //imagesModalCode5();
-            //imagesModalEx5();
+            imagesModalCode4();
+            imagesModalEx4();
+            imagesModalCode5();
+            imagesModalEx5();
             copyCodeI2();
             copyCodeI3();
+            copyCodeI4();
+            copyCodeI5();
         </script>
 
     </body>
