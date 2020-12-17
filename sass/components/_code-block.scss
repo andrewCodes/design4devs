@@ -1,0 +1,60 @@
+.code-block {
+    background-color: #eee;
+    border: solid .1rem #ddd;
+    border-radius: .3rem;
+    padding: 2rem;
+    position: relative;
+    box-shadow: $shadow-sm;
+
+    &__copy-btn {
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        background-color: $color-light;
+        border: solid .1rem #ddd;
+        border-top: none;
+        border-right: none;
+        border-radius: 0 .3rem 0 .3rem;
+        font-family: $font-code;
+        font-size: 1.3rem;
+        color: $color-dark;
+        padding: .75rem 1rem;
+
+        &:hover {
+            background-color: $color-base-x-light;
+        }
+
+        &:active {
+            background-color: $color-base-dark;
+        }
+    }
+
+    &__textarea {
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
+
+    &__code {
+
+        &--selector {
+            color: blue;
+        }
+
+        &--property {
+            color: blueviolet;
+        }
+
+        &--value {
+            color: orange;
+        }
+
+        &--punc {
+            color: black;
+        }
+
+        &--number {
+            color: forestgreen;
+        }
+    }
+}

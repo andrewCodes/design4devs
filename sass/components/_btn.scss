@@ -1,26 +1,65 @@
 .btn {
-    font-size: inherit;
-    border-radius: .3rem;
-    border: none;
-    padding: 1rem 3rem;
-    box-shadow: $shadow;
     cursor: pointer;
     transition: all .2s;
     
-    &:hover {
-        box-shadow: $shadow-lg;
-        background-blend-mode: darken;
-        transform: scale(1.02);
+    &--primary {
+        font-size: inherit;
+        border-radius: .3rem;
+        border: none;
+        padding: 1rem 3rem;
+        box-shadow: $shadow;
+        color: $color-white-8;
+        background-color: $color-base-x-dark;
+
+        &:hover {
+            box-shadow: $shadow-lg;
+            background-blend-mode: darken;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            box-shadow: $shadow-sm;
+            background-blend-mode: darken;
+            transform: scale(.99);
+        }
     }
     
-    &:active {
-        box-shadow: $shadow-sm;
-        background-blend-mode: darken;
-        transform: scale(.99);
+    &--dash-base {
+        font-size: inherit;
+        font-family: $font-code;
+        border-radius: none;
+        border: solid 2px $color-base;
+        color: $color-base;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: $color-dark;
+
+        &:hover {
+            background-color: $color-base;
+            border-color: $color-base-x-dark;
+            color: $color-dark;
+            font-weight: 500;
+        }
+
+        &:active {
+            background-color: $color-base-dark;
+            border-color: $color-base-x-dark;
+            color: $color-dark;
+            font-weight: 500;
+        }
     }
 }
 
-.btn--primary {
-    color: $color-white-8;
-    background-color: $color-base-x-dark;
+.explainer-buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.btn-group > .btn {
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
 }
