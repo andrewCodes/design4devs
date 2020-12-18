@@ -277,3 +277,78 @@ function imagesModalCode5() {
         }
     }
 };
+
+// Icons modals
+
+
+function iconsModalEx1() {
+    var modal = document.getElementById("icons-modal-ex1");
+    var btn = document.getElementById("icons__ex1-btn");
+    var span = document.getElementById("modal__close--icons-ex1");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function iconsModalEx2() {
+    var modal = document.getElementById("icons-modal-ex2");
+    var btn = document.getElementById("icons__ex2-btn");
+    var span = document.getElementById("modal__close--icons-ex2");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function iconsModalEx3() {
+    var modal = document.getElementById("icons-modal-ex3");
+    var btn = document.getElementById("icons__ex3-btn");
+    var span = document.getElementById("modal__close--icons-ex3");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function iconsModalEx4() {
+    var modal = document.getElementById("icons-modal-ex4");
+    var btn = document.getElementById("icons__ex4-btn");
+    var span = document.getElementById("modal__close--icons-ex4");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
