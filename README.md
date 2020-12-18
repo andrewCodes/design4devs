@@ -21,7 +21,10 @@ Project is created with:
 * HTML
 * Sass (SCSS)
 * CSS Grid
+* Flexbox
 * BEM (Block Element Modifier methodology)
+* JavaScript
+* jQuery
 	
 ## Setup
 To run this project locally, use npm:
