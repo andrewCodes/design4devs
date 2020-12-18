@@ -117,9 +117,6 @@
 
         &--4 {
             grid-row: 9/span 1;
-        }
-
-        &:last-of-type {
             border-bottom: $separator-base-solid;
         }
     }
