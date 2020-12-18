@@ -573,8 +573,7 @@ body {
     .colours__separator--4 {
       grid-row: 9/span 1; }
     .colours__separator--5 {
-      grid-row: 11/span 1; }
-    .colours__separator:last-of-type {
+      grid-row: 11/span 1;
       border-bottom: solid 2px #FFB901; }
 
 .gallery-colours {
@@ -863,8 +862,7 @@ body {
     .icons__separator--3 {
       grid-row: 7/span 1; }
     .icons__separator--4 {
-      grid-row: 9/span 1; }
-    .icons__separator:last-of-type {
+      grid-row: 9/span 1;
       border-bottom: solid 2px #FFB901; }
 
 .gallery-icons {
@@ -1036,8 +1034,7 @@ body {
     .images__separator--4 {
       grid-row: 9/span 1; }
     .images__separator--5 {
-      grid-row: 11/span 1; }
-    .images__separator:last-of-type {
+      grid-row: 11/span 1;
       border-bottom: solid 2px #FFB901; }
 
 .gallery-images {
@@ -1254,8 +1251,7 @@ body {
     .typography__separator--4 {
       grid-row: 9/span 1; }
     .typography__separator--5 {
-      grid-row: 11/span 1; }
-    .typography__separator:last-of-type {
+      grid-row: 11/span 1;
       border-bottom: solid 2px #FFB901; }
 
 .gallery-typography {
