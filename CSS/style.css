@@ -1141,6 +1141,154 @@ body {
       grid-row: 1/span 1;
       grid-column: 3/span 1; }
 
+.spacing-section {
+  height: 100%;
+  width: 100%;
+  background-color: #2b2d42;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding-top: 5rem; }
+  .spacing-section__heading {
+    grid-column: 1/-1;
+    text-align: center;
+    justify-self: stretch;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
+    color: #E3170A;
+    position: sticky;
+    z-index: 2;
+    top: 0; }
+
+.spacing {
+  background-color: #2b2d42;
+  display: grid;
+  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+  align-items: center;
+  justify-content: center; }
+  .spacing__quote {
+    grid-column: 2/span 2;
+    margin-bottom: 3rem;
+    color: #FFB901;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Fira Code", monospace;
+    margin-top: 0; }
+  .spacing__bullet-bg {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; }
+    .spacing__bullet-bg--1 {
+      grid-row: 2/span 1;
+      grid-column: 2/span 1; }
+    .spacing__bullet-bg--2 {
+      grid-row: 4/span 1;
+      grid-column: 2/span 1; }
+  .spacing__bullet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    color: rgba(255, 255, 255, 0.8); }
+  .spacing__bullet-number {
+    line-height: 7rem; }
+  .spacing__bullet-text {
+    font-family: "Fira Code", monospace; }
+  .spacing__explainer {
+    width: 100%;
+    height: auto; }
+    .spacing__explainer p {
+      color: #FFB901;
+      font-family: "Fira Code", monospace; }
+      .spacing__explainer p:not(:last-child) {
+        margin-bottom: 2rem; }
+      .spacing__explainer p span {
+        color: #E3170A;
+        font-weight: 700; }
+      .spacing__explainer p a:link, .spacing__explainer p a:visited {
+        color: #E3170A;
+        font-weight: 700;
+        text-decoration: underline; }
+    .spacing__explainer--1 {
+      grid-row: 2/span 1;
+      grid-column: 3/span 1; }
+    .spacing__explainer--2 {
+      grid-row: 4/span 1;
+      grid-column: 3/span 1; }
+  .spacing__separator {
+    grid-column: 1/-1;
+    border-bottom: dashed 2px #FFB901; }
+    .spacing__separator--1 {
+      grid-row: 3/span 1; }
+    .spacing__separator--2 {
+      grid-row: 5/span 1;
+      border-bottom: solid 2px #FFB901; }
+
+.gallery-spacing {
+  background: #2b2d42;
+  border-bottom: solid 2px #FFB901;
+  grid-column: 1/-1; }
+  .gallery-spacing__item--1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2; }
+  .gallery-spacing__item--2 {
+    grid-row: 1/ span 3;
+    grid-column: 3 / span 3; }
+  .gallery-spacing__item--3 {
+    grid-row: 1 / span 2;
+    grid-column: 6 / 7; }
+  .gallery-spacing__item--4 {
+    grid-row: 1 / span 2;
+    grid-column: 7 / -1; }
+  .gallery-spacing__item--5 {
+    grid-row: 3 / span 3;
+    grid-column: 1 / span 1; }
+  .gallery-spacing__item--6 {
+    grid-row: 3 / span 3;
+    grid-column: 2 / span 1; }
+  .gallery-spacing__item--7 {
+    grid-row: 4 / span 2;
+    grid-column: 3 / span 2; }
+  .gallery-spacing__item--8 {
+    grid-row: 4 / 5;
+    grid-column: 5 / 6; }
+  .gallery-spacing__item--9 {
+    grid-row: 3 / span 2;
+    grid-column: 6 / span 2; }
+  .gallery-spacing__item--10 {
+    grid-row: 3 / span 3;
+    grid-column: 8 / -1; }
+  .gallery-spacing__item--11 {
+    grid-row: 6 / span 2;
+    grid-column: 1 / 2; }
+  .gallery-spacing__item--12 {
+    grid-row: 6 / span 2;
+    grid-column: 2 / span 2; }
+  .gallery-spacing__item--13 {
+    grid-row: 6 / span 2;
+    grid-column: 4 / 5; }
+  .gallery-spacing__item--14 {
+    grid-row: 5 / span 3;
+    grid-column: 5 / span 3; }
+  .gallery-spacing__item--15 {
+    grid-row: 6 / span 2;
+    grid-column: 8 / -1; }
+  .gallery-spacing__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+
 .typography-section {
   height: 100%;
   width: 100%;
