@@ -352,3 +352,42 @@ function iconsModalEx4() {
         }
     }
 };
+
+// Spacing modals
+
+
+function spacingModalEx1() {
+    var modal = document.getElementById("spacing-modal-ex1");
+    var btn = document.getElementById("spacing__ex1-btn");
+    var span = document.getElementById("modal__close--spacing-ex1");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function spacingModalEx2() {
+    var modal = document.getElementById("spacing-modal-ex2");
+    var btn = document.getElementById("spacing__ex2-btn");
+    var span = document.getElementById("modal__close--spacing-ex2");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
