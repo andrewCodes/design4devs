@@ -1195,7 +1195,9 @@ body {
     .inspiration__separator--1 {
       grid-row: 3/span 1; }
     .inspiration__separator--2 {
-      grid-row: 5/span 1;
+      grid-row: 5/span 1; }
+    .inspiration__separator--3 {
+      grid-row: 7/span 1;
       border-bottom: solid 2px #FFB901; }
 
 .gallery-inspiration {

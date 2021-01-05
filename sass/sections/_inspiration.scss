@@ -94,6 +94,10 @@
 
         &--2 {
             grid-row: 5/span 1;
+        }
+
+        &--3 {
+            grid-row: 7/span 1;
             border-bottom: $separator-base-solid;
         }
     }

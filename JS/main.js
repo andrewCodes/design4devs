@@ -391,3 +391,61 @@ function spacingModalEx2() {
         }
     }
 };
+
+
+// Inspiration modals
+
+
+function inspirationModalEx1() {
+    var modal = document.getElementById("inspiration-modal-ex1");
+    var btn = document.getElementById("inspiration__ex1-btn");
+    var span = document.getElementById("modal__close--inspiration-ex1");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function inspirationModalEx2() {
+    var modal = document.getElementById("inspiration-modal-ex2");
+    var btn = document.getElementById("inspiration__ex2-btn");
+    var span = document.getElementById("modal__close--inspiration-ex2");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function inspirationModalEx3() {
+    var modal = document.getElementById("inspiration-modal-ex3");
+    var btn = document.getElementById("inspiration__ex3-btn");
+    var span = document.getElementById("modal__close--inspiration-ex3");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
