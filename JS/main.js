@@ -449,3 +449,133 @@ function inspirationModalEx3() {
         }
     }
 };
+
+// Conversion modals
+
+
+function conversionModalEx1() {
+    var modal = document.getElementById("conversion-modal-ex1");
+    var btn = document.getElementById("conversion__ex1-btn");
+    var span = document.getElementById("modal__close--conversion-ex1");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx2() {
+    var modal = document.getElementById("conversion-modal-ex2");
+    var btn = document.getElementById("conversion__ex2-btn");
+    var span = document.getElementById("modal__close--conversion-ex2");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx3() {
+    var modal = document.getElementById("conversion-modal-ex3");
+    var btn = document.getElementById("conversion__ex3-btn");
+    var span = document.getElementById("modal__close--conversion-ex3");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx4() {
+    var modal = document.getElementById("conversion-modal-ex4");
+    var btn = document.getElementById("conversion__ex4-btn");
+    var span = document.getElementById("modal__close--conversion-ex4");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx5() {
+    var modal = document.getElementById("conversion-modal-ex5");
+    var btn = document.getElementById("conversion__ex5-btn");
+    var span = document.getElementById("modal__close--conversion-ex5");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx6() {
+    var modal = document.getElementById("conversion-modal-ex6");
+    var btn = document.getElementById("conversion__ex6-btn");
+    var span = document.getElementById("modal__close--conversion-ex6");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
+function conversionModalEx7() {
+    var modal = document.getElementById("conversion-modal-ex7");
+    var btn = document.getElementById("conversion__ex7-btn");
+    var span = document.getElementById("modal__close--conversion-ex7");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+};
+
