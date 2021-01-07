@@ -1,29 +1,73 @@
 .continue {
-    height: 250vh;
-    //width: 100vw;
-    //top: 0;
-    //left: 0;
-    //bottom: 0;
-    //right: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    //background: linear-gradient(to bottom, rgba($color-dark, 0) 0%, rgba($color-dark, 0) 20%, rgba($color-dark, 1) 80%, rgba($color-dark, 1) 100%);
+    height: 330vh;
     position: relative;
-    //z-index: 2;
+
+    &__arrows {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+
+        &--left {
+            width: 5vw;
+            height: 7.5vh;
+            background-color: $color-light;
+
+            @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+                clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+            }
+        }
+
+        &--center-left {
+            width: 10vw;
+            height: 15vh;
+            background-color: $color-light;
+
+            @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+                clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+            }
+        }
+
+        &--center {
+            width: 20vw;
+            height: 30vh;
+            background-color: $color-light;
+
+            @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+                clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+            }
+        }
+
+        &--center-right {
+            width: 10vw;
+            height: 15vh;
+            background-color: $color-light;
+
+            @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+                clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+            }
+        }
+
+        &--right {
+            width: 5vw;
+            height: 7.5vh;
+            background-color: $color-light;
+
+            @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+                clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 100% 60%, 50% 100%, 0% 60%, 20% 60%);
+            }
+        }
+    }
 
     &__heading {
         text-align: center;
         color: $color-base-x-dark;
-        //align-self: start;
-        height: 50vh;
         position: sticky;
         z-index: 1;
         top: 50vh;
     }
 
     &__grad {
-        height: 250vh;
+        height: 330vh;
         width: 100vw;
         top: 0;
         left: 0;
