@@ -5,11 +5,11 @@
     &--primary {
         font-size: inherit;
         border-radius: .3rem;
-        border: none;
+        border: 1px solid $color-base;;
         padding: 1rem 3rem;
         box-shadow: $shadow;
-        color: $color-white-8;
-        background-color: $color-base-x-dark;
+        color: $color-white;
+        background-color: $color-base;
 
         &:hover {
             box-shadow: $shadow-lg;

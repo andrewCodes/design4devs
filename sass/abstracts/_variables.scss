@@ -29,6 +29,7 @@ $gradient-dark-h-o: linear-gradient(145deg, rgba($color-base-x-dark,.97) 10%, rg
 $gradient-full: linear-gradient(145deg, rgba($color-base-x-dark, 1) 10%, rgba($color-base-x-light, 1)); //
 $gradient-dark: linear-gradient(145deg, rgba($color-base-x-dark, 1) 10%, rgba($color-base, 1));
 $gradient-dark-reverse: linear-gradient(145deg, rgba($color-base, 1) 10%, rgba($color-base-x-dark, 1));
+$gradient-full-reverse: linear-gradient(145deg, rgba($color-base-x-light, 1) 10%, rgba($color-base-x-dark, 1));
     
 // SHADOWS
 
