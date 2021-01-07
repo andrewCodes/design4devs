@@ -26,7 +26,7 @@
 @mixin section-content { // creates grid container for main content within a section (i.e. everything except the section heading)
     background-color: $color-dark;
     display: grid;
-    grid-template-columns:  minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+    grid-template-columns:  minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
     grid-column-gap: 3rem;
     grid-row-gap: 5rem;
     align-items: center;

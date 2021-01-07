@@ -8,6 +8,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 67.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -496,7 +499,7 @@ body {
 .colours {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -727,7 +730,7 @@ body {
 .conversion {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -969,7 +972,7 @@ body {
 .icons {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -1136,7 +1139,7 @@ body {
 .images {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -1308,7 +1311,7 @@ body {
 .inspiration {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -1588,7 +1591,7 @@ body {
 .spacing {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
@@ -1736,7 +1739,7 @@ body {
 .typography {
   background-color: #2b2d42;
   display: grid;
-  grid-template-columns: minmax(0rem, 1fr) 1fr 3fr minmax(0rem, 1fr);
+  grid-template-columns: minmax(0rem, 2fr) minmax(24rem, 1fr) minmax(72rem, 3fr) minmax(0rem, 2fr);
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   align-items: center;
