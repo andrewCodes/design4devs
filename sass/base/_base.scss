@@ -10,7 +10,11 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-lg) {
+        //font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-md) {
         font-size: 55%;
     }
 }

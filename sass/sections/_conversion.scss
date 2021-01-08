@@ -17,38 +17,31 @@
         @include section-content__bullet-bg;
 
         &--1 {
-            grid-row: 2/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-1;
         }
 
         &--2 {
-            grid-row: 4/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-2;
         }
 
         &--3 {
-            grid-row: 6/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-3;
         }
 
         &--4 {
-            grid-row: 8/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-4;
         }
 
         &--5 {
-            grid-row: 10/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-5;
         }
 
         &--6 {
-            grid-row: 12/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-6;
         }
 
         &--7 {
-            grid-row: 14/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg-7;
         }
     }
 
@@ -89,38 +82,31 @@
         }
 
         &--1 {
-            grid-row: 2/span 1;
-            grid-column: 3/span 1;
+            @include exp-1;
         }
 
         &--2 {
-            grid-row: 4/span 1;
-            grid-column: 3/span 1;
+            @include exp-2;
         }
 
         &--3 {
-            grid-row: 6/span 1;
-            grid-column: 3/span 1;
+            @include exp-3;
         }
 
         &--4 {
-            grid-row: 8/span 1;
-            grid-column: 3/span 1;
+            @include exp-4;
         }
 
         &--5 {
-            grid-row: 10/span 1;
-            grid-column: 3/span 1;
+            @include exp-5;
         }
 
         &--6 {
-            grid-row: 12/span 1;
-            grid-column: 3/span 1;
+            @include exp-6;
         }
 
         &--7 {
-            grid-row: 14/span 1;
-            grid-column: 3/span 1;
+            @include exp-7;
         }
     }
 
