@@ -1140,6 +1140,9 @@ body {
     .header {
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); } }
+  @media only screen and (max-width: 67.5em) {
+    .header {
+      grid-template-columns: [header-start] 7rem [header-center-start] 5fr [header-center-end] 7rem [header-end]; } }
   .header__logo-holder {
     position: absolute;
     top: 2rem;
@@ -1158,6 +1161,9 @@ body {
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: minmax(6rem, 1fr) repeat(5, 1fr) minmax(6rem, 1fr); }
+  @media only screen and (max-width: 67.5em) {
+    .header-content {
+      grid-template-columns: 7rem repeat(5, 1fr) 7rem; } }
   .header-content__title {
     grid-row: 1;
     grid-column: 2 / 6;

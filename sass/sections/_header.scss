@@ -16,6 +16,10 @@
         clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     }
 
+    @media only screen and (max-width: $bp-lg) {
+        grid-template-columns: [header-start] 7rem [header-center-start] 5fr [header-center-end] 7rem [header-end];
+    }
+
     &__logo-holder {
         position: absolute;
         top: 2rem;
@@ -40,6 +44,10 @@
     display: grid;
     grid-template-rows: min-content;
     grid-template-columns: minmax(6rem, 1fr) repeat(5,1fr) minmax(6rem, 1fr);
+
+    @media only screen and (max-width: $bp-lg) {
+        grid-template-columns: 7rem repeat(5,1fr) 7rem;
+    }
     
     &__title {
         grid-row: 1;
