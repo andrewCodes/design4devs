@@ -4,6 +4,13 @@
     grid-template-rows: repeat(7, 5vw); //defines height of row using
     grid-gap: 1.5rem;
     padding: 5rem;
+    background: $color-dark;
+    border-bottom: $separator-base-solid;
+    grid-column: 1/ -1;
+
+    @media only screen and (max-width: $bp-sm) {
+        padding: 1.5rem;
+    }
 
     &__item {
         position: relative;

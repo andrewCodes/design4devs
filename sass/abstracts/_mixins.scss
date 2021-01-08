@@ -34,7 +34,6 @@
 
     @media only screen and (max-width: $bp-sm) {
         grid-template-columns: 1fr;
-        padding: 0 2rem 0 2rem;
     }
 }
 
@@ -50,6 +49,9 @@
 
     @media only screen and (max-width: $bp-sm) {
         grid-column: 1 / span 1;
+        margin-bottom: 2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 }
 
@@ -57,6 +59,10 @@
     width: 100%;
     padding-top: 100%;
     position: relative;
+
+    @media only screen and (max-width: $bp-sm) {
+        padding-top: 0;
+    }
 }
 
 @mixin section-content__bullet {
@@ -73,78 +79,139 @@
     text-align: center;
     align-content: center;
     color: $color-white-8;
+
+    @media only screen and (max-width: $bp-sm) {
+        height: auto;
+        width: auto;
+        border-radius: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        align-items: center;
+        margin: 0 1rem 0 1rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+@mixin section-content__bullet-number {
+    line-height: 7rem;
+
+    @media only screen and (max-width: $bp-sm) {
+        line-height: 4rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@mixin section-content__explainer {
+    width: 100%;
+    height: auto;
+
+    @media only screen and (max-width: $bp-sm) {
+        width: auto;
+        margin: 0 2.5rem;
+    }
+
+    & p {
+        color: $color-base;
+        font-family: $font-code;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        & span {
+            color: $color-base-x-dark;
+            font-weight: 700;
+        }
+
+        & a:link, a:visited {
+            color: $color-base-x-dark;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
 }
 
 //////////////////////////
 // BULLET PLACEMENT
 
-@mixin bullet-bg-1 {
+@mixin bullet-bg--1 {
     grid-row: 2/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
+        grid-row: 2 / span 1;
         grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-2 {
+@mixin bullet-bg--2 {
     grid-row: 4/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 5 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-3 {
+@mixin bullet-bg--3 {
     grid-row: 6/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 8 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-4 {
+@mixin bullet-bg--4 {
     grid-row: 8/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 11/ span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-5 {
+@mixin bullet-bg--5 {
     grid-row: 10/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 14 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-6 {
+@mixin bullet-bg--6 {
     grid-row: 12/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 17/ span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin bullet-bg-7 {
+@mixin bullet-bg--7 {
     grid-row: 14/span 1;
     grid-column: 2/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 20 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
 /////////////////////////////
 // EXPLAINER POSITION
 
-@mixin exp-1 {
+@mixin explainer--1 {
     grid-row: 2/span 1;
     grid-column: 3/span 1;
 
@@ -154,89 +221,123 @@
     }
 }
 
-@mixin exp-2 {
+@mixin explainer--2 {
     grid-row: 4/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 6 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin exp-3 {
+@mixin explainer--3 {
     grid-row: 6/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 9 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin exp-4 {
+@mixin explainer--4 {
     grid-row: 8/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 12 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin exp-5 {
+@mixin explainer--5 {
     grid-row: 10/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 15 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin exp-6 {
+@mixin explainer--6 {
     grid-row: 12/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 18 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
-@mixin exp-7 {
+@mixin explainer--7 {
     grid-row: 14/span 1;
     grid-column: 3/span 1;
 
     @media only screen and (max-width: $bp-sm) {
-
+        grid-row: 21 / span 1;
+        grid-column: 1/span 1;
     }
 }
 
 /////////////////////////////
 // SEPARATOR POSITION
 
-@mixin sep-1 {
+@mixin separator--1 {
     grid-row: 3/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 4 / span 1;
+    }
 }
 
-@mixin sep-2 {
+@mixin separator--2 {
     grid-row: 5/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 7 / span 1;
+    }
 }
 
-@mixin sep-3 {
+@mixin separator--3 {
     grid-row: 7/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 10 / span 1;
+    }
 }
 
-@mixin sep-4 {
+@mixin separator--4 {
     grid-row: 9/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 13 / span 1;
+    }
 }
 
-@mixin sep-5 {
+@mixin separator--5 {
     grid-row: 11/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 16 / span 1;
+    }
 }
 
-@mixin sep-6 {
+@mixin separator--6 {
     grid-row: 13/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 19 / span 1;
+    }
 }
 
-@mixin sep-7 {
+@mixin separator--7 {
     grid-row: 15/span 1;
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-row: 22 / span 1;
+    }
 }
 
 /////////////////////////////
