@@ -1169,15 +1169,27 @@ body {
     grid-row: 1;
     grid-column: 2 / 6;
     margin-bottom: 2.5rem;
-    margin-right: 2rem;
     font-family: "Bungee", cursive;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     text-shadow: 0.3rem 0.3rem #FFB901; }
+    @media only screen and (max-width: 67.5em) {
+      .header-content__title {
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .header-content__title {
+        margin-bottom: 1.5rem; } }
     @media only screen and (max-width: 47em) {
       .header-content__title {
-        grid-column: 2 / -1; } }
+        grid-column: 2 / 7; } }
     @media only screen and (max-width: 33.5em) {
       .header-content__title {
-        text-shadow: 2px 2px #FFB901; } }
+        text-shadow: 2px 2px #FFB901;
+        font-size: 8vw; } }
+    @media only screen and (max-width: 26.25em) {
+      .header-content__title {
+        font-size: 9vw; } }
   .header-content__subtitle {
     grid-row: 2;
     grid-column: 2/6;
@@ -1187,6 +1199,13 @@ body {
     letter-spacing: .5rem;
     font-weight: 300;
     max-width: 90ch; }
+    @media only screen and (max-width: 33.5em) {
+      .header-content__subtitle {
+        grid-column: 2/7;
+        font-size: 3.5vw; } }
+    @media only screen and (max-width: 26.25em) {
+      .header-content__subtitle {
+        font-size: 4vw; } }
   .header-content__image {
     grid-row: 1/span 2;
     grid-column: 6 / -1;
