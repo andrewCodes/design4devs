@@ -8,7 +8,7 @@
     border-bottom: $separator-base-solid;
     grid-column: 1/ -1;
 
-    @media only screen and (max-width: $bp-sm) {
+    @media only screen and (max-width: $bp-md) {
         padding: 1.5rem;
     }
 

@@ -23,11 +23,9 @@ body {
   font-size: 5rem;
   font-weight: 300;
   letter-spacing: .7rem; }
-
-.heading-2 {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: .3rem; }
+  @media only screen and (max-width: 33.5em) {
+    .heading-1 {
+      font-size: 8vw; } }
 
 .btn {
   cursor: pointer;
@@ -1134,8 +1132,8 @@ body {
   background-image: linear-gradient(145deg, rgba(227, 23, 10, 0.97) 10%, rgba(253, 233, 0, 0.97)), url(../../img/backgrounds/art-tools.png);
   background-size: cover;
   background-position: top;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  color: #ffffff; }
   @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
@@ -1164,24 +1162,51 @@ body {
   @media only screen and (max-width: 67.5em) {
     .header-content {
       grid-template-columns: 7rem repeat(5, 1fr) 7rem; } }
+  @media only screen and (max-width: 47em) {
+    .header-content {
+      grid-template-columns: 2rem repeat(5, 1fr) 2rem; } }
   .header-content__title {
     grid-row: 1;
     grid-column: 2 / 6;
     margin-bottom: 2.5rem;
+    margin-right: 2rem;
     font-family: "Bungee", cursive;
-    color: #ffffff;
     text-shadow: 0.3rem 0.3rem #FFB901; }
+    @media only screen and (max-width: 47em) {
+      .header-content__title {
+        grid-column: 2 / -1; } }
+    @media only screen and (max-width: 33.5em) {
+      .header-content__title {
+        text-shadow: 2px 2px #FFB901; } }
   .header-content__subtitle {
     grid-row: 2;
     grid-column: 2/6;
-    font-family: "Fira Code", monospace;
-    margin-bottom: 2.5rem; }
+    font-family: "Lato", sans-serif;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-weight: 300;
+    max-width: 90ch; }
   .header-content__image {
     grid-row: 1/span 2;
     grid-column: 6 / -1;
     width: 100%;
     height: auto;
     align-self: center; }
+    @media only screen and (max-width: 67.5em) {
+      .header-content__image {
+        grid-row: 1 / span 1;
+        grid-column: 5 / -1;
+        align-self: start;
+        justify-self: end;
+        width: 75%; } }
+    @media only screen and (max-width: 33.5em) {
+      .header-content__image {
+        margin-top: 3rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .header-content__image {
+        margin-top: 0;
+        align-self: center; } }
   .header-content__button {
     grid-row: 3;
     grid-column: 2; }
