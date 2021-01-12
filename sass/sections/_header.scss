@@ -14,10 +14,26 @@
 
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+        @media only screen and (max-width: $bp-sm) {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+        }
     }
 
     @media only screen and (max-width: $bp-xl) {
         grid-template-columns: [header-start] 7rem [header-center-start] 5fr [header-center-end] 7rem [header-end];
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        padding: 10rem 0 7rem 0;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+        padding: 10rem 0 4rem 0;
     }
 
     &__logo-holder {
