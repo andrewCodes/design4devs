@@ -11,13 +11,16 @@
     padding-top: 5rem;
 }
 
-@mixin section-heading { // positions section heading
+@mixin section-heading { // positions and styles section headings
     grid-column: 1/-1;
     text-align: center;
     justify-self: stretch;
     padding-bottom: 3rem;
     background-image: linear-gradient(rgba($color-dark, 1) 0%, rgba($color-dark, 1) 63%, rgba($color-dark,0) 100%);
     color: $color-base-x-dark;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0;

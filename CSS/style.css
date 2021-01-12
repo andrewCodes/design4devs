@@ -19,14 +19,15 @@ body {
   line-height: 1.6;
   font-size: 1.6rem; }
 
-.heading-1 {
-  font-size: 5rem;
-  font-weight: 300;
-  letter-spacing: .7rem; }
-  @media only screen and (max-width: 33.5em) {
-    .heading-1 {
-      font-size: 8vw; } }
+/*.heading-1 {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
 
+    @media only screen and (max-width: $bp-sm) {
+        font-size: 8vw;
+    }
+}*/
 .btn {
   cursor: pointer;
   transition: all .2s; }
@@ -202,127 +203,6 @@ body {
     color: #2b2d42;
     margin-bottom: 2rem; }
 
-/*.navigation {
-
-    &__button {
-        background-color: $color-base;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
-        border-radius: 50%;
-        z-index: 2000;
-        box-shadow: $shadow;
-        text-align: center;
-        cursor: pointer;
-
-        &:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
-            top: -1rem;
-        }
-    }
-
-    &__button:hover &__icon::before { // this is to make the lines of the hamburger separate slightly when we hove the button
-        top: -1rem;
-    }
-
-    &__button:hover &__icon::after { // this is to make the lines of the hamburger separate slightly when we hove the button
-        top: 1rem;
-    }
-
-    &__burger {
-        position: relative;
-        margin-top: 3.5rem;
-
-
-        &,
-        &::before,
-        &::after {
-            width: 3rem;
-            height: 2px;
-            background-color: $color-base-x-dark;
-            display: inline-block; //display must be specified for pseufo element to actually appear
-        }
-
-        &::before,
-        &::after {
-            content: ""; //content must be specified for a pseudo element to actually appear
-            position: absolute;
-            left: 0;
-            transition: all .2s;
-        }
-
-        &::before {
-            top: -.8rem; // moves the element above the span
-        }
-
-        &::after {
-            top: .8rem; //moves the element below the span
-        }
-    }
-
-    &__bg {
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        background-image: radial-gradient($color-base-x-light, $color-base-x-dark);
-        z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-    }
-
-    &__nav {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1500;
-        opacity: 0;
-        width: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    &__list {
-        @include center-element;
-        list-style: none;
-        text-align: center;
-        width: 100%; //i've added this as the list was only taking up 50% of the available space (seemingly because of centering it) which meant the text was getting unnecessarily squashed
-    }
-
-    &__item {
-        margin: 1rem;
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            display: inline-block;
-            font-size: 3rem;
-            font-weight: 300;
-            padding: 1rem 2rem;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 230%;
-            transition: all .4s;
-
-            span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
-        }
-
-        &:hover,
-        &:active {
-            background-position: 100%;
-            color: $color-base;
-            transform: translateX(1rem);
-        }
-    }
-}*/
 .navigation__checkbox {
   display: none; }
 
@@ -341,16 +221,16 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  justify-items: center;
-  /*@include respond(tab-port) {
-            top: 4rem;
-            right: 4rem;
-        }
-
-        @include respond(phone) {
-            top: 3rem;
-            right: 3rem;
-        }*/ }
+  justify-items: center; }
+  @media only screen and (max-width: 67.5em) {
+    .navigation__button {
+      top: 2rem;
+      right: 2rem; } }
+  @media only screen and (max-width: 47em) {
+    .navigation__button {
+      top: 0;
+      right: 0;
+      border-radius: 0; } }
 
 .navigation__bg {
   height: 100%;
@@ -364,14 +244,15 @@ body {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__nav {
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   transition: opacity 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s, width 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
   display: flex;
   align-items: center;
@@ -387,8 +268,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  list-style: none; }
+  min-height: 100vh;
+  list-style: none;
+  padding: 2rem 0; }
 
 .navigation__item {
   margin: 1rem;
@@ -411,7 +293,8 @@ body {
   background-image: linear-gradient(to right, #E3170A, #FFB901 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap; }
   .navigation__link:link:before, .navigation__link:visited:before {
     display: block;
     content: '';
@@ -428,6 +311,9 @@ body {
     background-position: 0%; }
     .navigation__link:link:hover:before, .navigation__link:link:active:before, .navigation__link:visited:hover:before, .navigation__link:visited:active:before {
       width: 100%; }
+  @media only screen and (max-width: 26.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.5rem; } }
 
 .navigation__checkbox:checked ~ .navigation__bg {
   height: 100%;
@@ -462,10 +348,10 @@ body {
   height: 0; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon--1 {
-  transform: rotate(-495deg) translateY(-0.2rem); }
+  transform: rotate(-135deg) translateY(-0.2rem); }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon--3 {
-  transform: rotate(495deg) translateY(0.2rem); }
+  transform: rotate(135deg) translateY(0.2rem); }
 
 .bg-video {
   position: fixed;
@@ -496,6 +382,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -828,6 +717,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -1245,6 +1137,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -1499,6 +1394,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -1772,6 +1670,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -2131,6 +2032,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
@@ -2347,6 +2251,9 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(#2b2d42 0%, #2b2d42 63%, rgba(43, 45, 66, 0) 100%);
     color: #E3170A;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
     position: sticky;
     z-index: 2;
     top: 0; }
