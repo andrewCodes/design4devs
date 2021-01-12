@@ -24,6 +24,10 @@
     position: sticky;
     z-index: 2;
     top: 0;
+
+    @media only screen and (max-width: $bp-xs) {
+        font-size: 9vw;
+    }
 }
 
 @mixin section-content { // creates grid container for main content within a section (i.e. everything except the section heading)
@@ -55,6 +59,10 @@
         margin-bottom: 2rem;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+        font-size: 1.8rem;
     }
 }
 
