@@ -155,11 +155,18 @@ body {
     padding: 2rem;
     width: 80vw;
     max-height: 80vh; }
-  .modal__figure {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(min-content, calc(65vh - 4rem)) minmax(15vh, min-content);
-    height: calc(80vh - 4rem); }
+    @media only screen and (max-width: 47em) {
+      .modal__content {
+        padding: 1.5rem;
+        width: 85vw; } }
+    @media only screen and (max-width: 33.5em) {
+      .modal__content {
+        padding: 1rem;
+        width: 90vw; } }
+    @media only screen and (max-width: 26.25em) {
+      .modal__content {
+        padding: .5rem;
+        width: 95vw; } }
   .modal__close {
     position: absolute;
     top: 4.5rem;
@@ -172,6 +179,14 @@ body {
       color: #ffffff;
       text-decoration: none;
       cursor: pointer; }
+    @media only screen and (max-width: 67.5em) {
+      .modal__close {
+        top: 4.5rem;
+        right: 3.5rem; } }
+    @media only screen and (max-width: 47em) {
+      .modal__close {
+        top: 4rem;
+        right: 3rem; } }
   .modal__img {
     display: block;
     max-width: 100%;
@@ -188,6 +203,9 @@ body {
     color: #2b2d42;
     margin: 2rem auto 0 auto;
     max-width: 75ch; }
+    @media only screen and (max-width: 26.25em) {
+      .modal__caption {
+        padding: 0 0 1rem 0; } }
     .modal__caption--link, .modal__caption--link:link, .modal__caption--link:visited {
       color: #E3170A;
       font-size: 1.6rem;
