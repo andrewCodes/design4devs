@@ -11,36 +11,96 @@
     background-repeat: no-repeat;
     background-size: 20% auto;
 
-    &__title {
-        grid-row: 1;
-        grid-column: 2 / span 1;
+    @media only screen and (max-width: $bp-xl) {
+        padding-top: 19rem;
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+        grid-template-columns: 6rem 1fr 6rem;
+        padding-top: 18rem;
+        background-image: none;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        grid-template-columns: 1fr;
+    }
+
+    &__card {
+        grid-column: 2/span 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-light;
         text-align: center;
+        padding: 3rem 2rem;
+        border-radius: 3px;
+        position: relative;
+
+        @media only screen and (max-width: $bp-lg) {
+            &::before {
+                content: "";
+                background-image: url(../../img/Undraw/mailbox.svg);
+                background-size: 35% auto;
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                opacity: .1;
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                width: auto;
+                height:auto;
+                z-index: 0;
+
+                @media only screen and (max-width: $bp-md) {
+                    background-size: 45% auto;
+                }
+
+                @media only screen and (max-width: $bp-sm) {
+                    background-size: 50% auto;
+                    background-position: right center;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            margin: 0 1.5rem;
+            padding: 2rem 1rem;
+        }
+    }
+
+    &__title {
         font-size: 3rem;
         font-family: $font-primary;
         letter-spacing: .4rem;
         font-weight: 300;
         color: $color-dark;
-        padding: 2rem 2rem 2.5rem 2rem;
-        border-radius: .3rem .3rem 0 0;
-        background-color: $color-light;
-        margin: 0 1rem 0 1rem;
+        margin-bottom: 2.5rem;
+        z-index: 1;
+
+        @media only screen and (max-width: $bp-xl) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            letter-spacing: .3rem;
+        }
     }
 
     &__text {
-        grid-row: 2;
-        grid-column: 2 / span 1;
-        text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: $color-dark;
-        padding:  0 2rem 0 2rem;
-        background-color: $color-light;
-        margin: 0 1rem 0 1rem;
+        margin-bottom: 1.5rem;
+        z-index: 1;
+
+        @media only screen and (max-width: $bp-lg) {
+            font-size: 1.6rem;
+        }
     }
 
     &__form {
-        grid-row: 3;
-        grid-column: 2 / span 1;
-        margin: 0 1rem 0 1rem;
+        z-index: 1;
     }
 }
 
@@ -49,9 +109,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    background-color: $color-light;
-    padding: 1rem 1rem 0rem 1rem;
-    border-radius: 0 0 .3rem .3rem;
 
     &__input-group {
 
@@ -93,7 +150,6 @@
     }
 
     &__btn {
-        margin-bottom: 2.4rem;
-
+        //margin-bottom: 2.4rem;
     }
 }
