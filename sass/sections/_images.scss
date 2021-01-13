@@ -17,28 +17,23 @@
         @include section-content__bullet-bg;
 
         &--1 {
-            grid-row: 2/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg--1;
         }
 
         &--2 {
-            grid-row: 4/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg--2;
         }
 
         &--3 {
-            grid-row: 6/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg--3;
         }
 
         &--4 {
-            grid-row: 8/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg--4;
         }
 
         &--5 {
-            grid-row: 10/span 1;
-            grid-column: 2/span 1;
+            @include bullet-bg--5;
         }
     }
 
@@ -47,7 +42,7 @@
     }
 
     &__bullet-number {
-        line-height: 7rem;
+        @include section-content__bullet-number;
     }
 
     &__bullet-text {
@@ -55,52 +50,26 @@
     }
 
     &__explainer {
-        width: 100%;
-        height: auto;
-
-        & p {
-            color: $color-base;
-            font-family: $font-code;
-
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-            }
-
-            & span {
-                color: $color-base-x-dark;
-                font-weight: 700;
-            }
-
-            & a:link, a:visited {
-                color: $color-base-x-dark;
-                font-weight: 700;
-                text-decoration: underline;
-            }
-        }
+        @include section-content__explainer;
 
         &--1 {
-            grid-row: 2/span 1;
-            grid-column: 3/span 1;
+            @include explainer--1;
         }
 
         &--2 {
-            grid-row: 4/span 1;
-            grid-column: 3/span 1;
+            @include explainer--2;
         }
 
         &--3 {
-            grid-row: 6/span 1;
-            grid-column: 3/span 1;
+            @include explainer--3;
         }
 
         &--4 {
-            grid-row: 8/span 1;
-            grid-column: 3/span 1;
+            @include explainer--4;
         }
 
         &--5 {
-            grid-row: 10/span 1;
-            grid-column: 3/span 1;
+            @include explainer--5;
         }
     }
 
@@ -109,32 +78,29 @@
         border-bottom: $separator-base-dashed;
 
         &--1 {
-            grid-row: 3/span 1;
+            @include separator--1;
         }
 
         &--2 {
-            grid-row: 5/span 1;
+            @include separator--2;
         }
 
         &--3 {
-            grid-row: 7/span 1;
+            @include separator--3;
         }
 
         &--4 {
-            grid-row: 9/span 1;
+            @include separator--4;
         }
 
         &--5 {
-            grid-row: 11/span 1;
+            @include separator--5;
             border-bottom: $separator-base-solid;
         }
     }
 }
 
 .gallery-images {
-    background: $color-dark;
-    border-bottom: $separator-base-solid;
-    grid-column: 1/-1;
 
     &__item {
 
