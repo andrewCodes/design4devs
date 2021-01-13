@@ -109,10 +109,16 @@
 
 @mixin section-content__bullet-number {
     line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300;
 
     @media only screen and (max-width: $bp-md) {
         line-height: 4rem;
         margin-right: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+        font-size: 4.5rem;
     }
 }
 

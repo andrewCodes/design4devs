@@ -11,6 +11,12 @@ html {
   @media only screen and (max-width: 53.75em) {
     html {
       font-size: 55%; } }
+  @media only screen and (max-width: 33.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 26.25em) {
+    html {
+      font-size: 45%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -483,11 +489,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .colours__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .colours__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .colours__bullet-number {
+        font-size: 4.5rem; } }
   .colours__bullet-text {
     font-family: "Fira Code", monospace; }
   .colours__explainer {
@@ -844,11 +855,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .conversion__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .conversion__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .conversion__bullet-number {
+        font-size: 4.5rem; } }
   .conversion__bullet-text {
     font-family: "Fira Code", monospace; }
   .conversion__explainer {
@@ -1270,11 +1286,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .icons__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .icons__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .icons__bullet-number {
+        font-size: 4.5rem; } }
   .icons__bullet-text {
     font-family: "Fira Code", monospace; }
   .icons__explainer {
@@ -1540,11 +1561,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .images__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .images__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .images__bullet-number {
+        font-size: 4.5rem; } }
   .images__bullet-text {
     font-family: "Fira Code", monospace; }
   .images__explainer {
@@ -1808,11 +1834,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .inspiration__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .inspiration__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .inspiration__bullet-number {
+        font-size: 4.5rem; } }
   .inspiration__bullet-text {
     font-family: "Fira Code", monospace; }
   .inspiration__explainer {
@@ -2169,11 +2200,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .spacing__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .spacing__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .spacing__bullet-number {
+        font-size: 4.5rem; } }
   .spacing__bullet-text {
     font-family: "Fira Code", monospace; }
   .spacing__explainer {
@@ -2415,11 +2451,16 @@ body {
         font-size: 2rem;
         text-align: left; } }
   .typography__bullet-number {
-    line-height: 7rem; }
+    line-height: 7rem;
+    font-size: 5rem;
+    font-weight: 300; }
     @media only screen and (max-width: 47em) {
       .typography__bullet-number {
         line-height: 4rem;
         margin-right: 1.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .typography__bullet-number {
+        font-size: 4.5rem; } }
   .typography__bullet-text {
     font-family: "Fira Code", monospace; }
   .typography__explainer {
