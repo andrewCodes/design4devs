@@ -1,3 +1,49 @@
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::before,
 *::after {
@@ -1194,7 +1240,10 @@ body {
     font-size: 5rem;
     font-weight: 300;
     letter-spacing: .7rem;
-    text-shadow: 0.3rem 0.3rem #FFB901; }
+    text-shadow: 0.3rem 0.3rem #FFB901;
+    animation-name: fadeInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 67.5em) {
       .header-content__title {
         margin-bottom: 2rem; } }
@@ -1219,7 +1268,10 @@ body {
     font-size: 2rem;
     letter-spacing: .5rem;
     font-weight: 300;
-    max-width: 90ch; }
+    max-width: 90ch;
+    animation-name: fadeInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 33.5em) {
       .header-content__subtitle {
         grid-column: 2/7;
@@ -1232,7 +1284,10 @@ body {
     grid-column: 6 / -1;
     width: 100%;
     height: auto;
-    align-self: center; }
+    align-self: center;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 67.5em) {
       .header-content__image {
         grid-row: 1 / span 1;

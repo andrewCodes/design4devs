@@ -1,0 +1,73 @@
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem); // element starts 10rem to the left of its natural position
+    }
+
+    80% {
+        transform: translateX(1rem); // this will move the element 1rem to the right of its natural position
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); // element ends up fully opaque and in its end point / natural position
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    80% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
