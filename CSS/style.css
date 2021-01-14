@@ -8,6 +8,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  html:focus-within {
+    scroll-behavior: smooth; }
   @media only screen and (max-width: 53.75em) {
     html {
       font-size: 55%; } }
@@ -1058,6 +1060,69 @@ body {
   height: 100%;
   object-fit: cover;
   display: block; }
+
+.footer {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+  position: relative;
+  justify-items: center;
+  align-content: start;
+  padding: 15rem 3rem 6rem 3rem;
+  background-color: #2b2d42;
+  font-family: "Fira Code", monospace;
+  font-size: 1.4rem; }
+  .footer__logo {
+    position: absolute;
+    top: 2.5rem;
+    height: 10rem;
+    width: auto;
+    color: #FFB901;
+    background-color: #FFB901;
+    border-radius: 50%; }
+  .footer__heading {
+    text-align: center;
+    color: #E3170A;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    margin-bottom: .5rem; }
+  .footer__nav-list {
+    list-style: none;
+    text-align: center; }
+  .footer__nav-item:not(last-child) {
+    margin-bottom: .5rem; }
+  .footer__nav-link {
+    color: #FFB901;
+    text-decoration: none; }
+  .footer__link-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+  .footer__link {
+    color: #FFB901;
+    text-decoration: none; }
+    .footer__link:not(last-child) {
+      margin-bottom: .5rem; }
+  .footer__contact {
+    text-align: center; }
+    .footer__contact--email {
+      color: #FFB901;
+      text-decoration: none; }
+  .footer__author-info {
+    color: #FFB901; }
+  .footer__copyright {
+    position: absolute;
+    bottom: 1rem; }
+  .footer__copyright-text {
+    color: #E3170A;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .15rem; }
 
 .header {
   display: grid;

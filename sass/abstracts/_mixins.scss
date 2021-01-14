@@ -396,3 +396,13 @@
         object-fit: cover; //this is similar to background-size: cover. It will make the element (the video) fit the entire container whilst maintaining the aspect ratio. Anything that falls outside the parent element is automatically clipped.
     }
 }
+
+/////////////////////////
+// FOOTER
+
+@mixin footer-block {
+    //padding: 1rem 2rem 2rem 2rem;
+    //border: dashed 2px $color-base;
+    //width: 100%;
+    //height: 100%;
+}
