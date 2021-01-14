@@ -2212,9 +2212,12 @@ body {
   .sign-up__label {
     display: block;
     margin-left: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     transition: all .2s;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    text-align: left;
+    color: rgba(43, 45, 66, 0.8); }
   .sign-up__input:placeholder-shown ~ .sign-up__label {
     opacity: 0;
     visibility: hidden;
