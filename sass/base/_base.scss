@@ -10,6 +10,10 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
 
+    &:focus-within { //if added direct to html smooth-scrolling will be applied to search results accessed via CTRL+F. This way smooth scroll is only enabled when focus is on the page itself.
+        scroll-behavior: smooth;
+    }
+
     @media only screen and (max-width: $bp-lg) {
         font-size: 55%;
     }

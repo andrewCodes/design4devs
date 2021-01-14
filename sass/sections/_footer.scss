@@ -1,0 +1,130 @@
+.footer {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+    position: relative;
+    justify-items: center;
+    align-content: start;
+    padding: 15rem 3rem 6rem 3rem;
+    background-color: $color-dark;
+    font-family: $font-code;
+    font-size: 1.4rem;
+
+    &__logo {
+        position: absolute;
+        top: 2.5rem;
+        height: 10rem;
+        width: auto;
+        color: $color-base;
+        background-color: $color-base;
+        border-radius: 50%;
+    }
+
+    &__heading {
+        text-align: center;
+        color: $color-base-x-dark;
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: .4rem;
+        margin-bottom: .5rem;
+    }
+
+    &__nav {
+        @include footer-block;
+    }
+
+    &__nav-list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__nav-item {
+
+        &:not(last-child) {
+            margin-bottom: .5rem;
+        }
+
+        &--1 {
+
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+
+        &--4 {
+
+        }
+
+        &--5 {
+
+        }
+
+        &--6 {
+
+        }
+
+        &--7 {
+
+        }
+    }
+
+    &__nav-link {
+        color: $color-base;
+        text-decoration: none;
+    }
+
+    &__link-group {
+        @include footer-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    &__link {
+        color: $color-base;
+        text-decoration: none;
+
+        &:not(last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__contact {
+        @include footer-block;
+        text-align: center;
+
+        &--email {
+            color: $color-base;
+            text-decoration: none;
+        }
+    }
+
+    &__author {
+        @include footer-block;
+    }
+
+    &__author-info {
+        color: $color-base;
+    }
+
+    &__copyright {
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    &__copyright-text {
+        color: $color-base-x-dark;
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .15rem;
+    }
+}

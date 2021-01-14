@@ -579,3 +579,9 @@ function conversionModalEx7() {
     }
 };
 
+///////////////////////////////
+/// COPYRIGHT YEAR AUTO-UPDATE
+
+function copyrightYear() {
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+}
