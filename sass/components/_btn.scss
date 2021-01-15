@@ -24,6 +24,28 @@
         }
     }
     
+    &--danger {
+        font-size: inherit;
+        border-radius: .3rem;
+        border: 1px solid $color-base-x-dark;;
+        padding: 1rem 3rem;
+        box-shadow: $shadow;
+        color: $color-white;
+        background-color: $color-base-x-dark;
+
+        &:hover {
+            box-shadow: $shadow-lg;
+            background-blend-mode: darken;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            box-shadow: $shadow-sm;
+            background-blend-mode: darken;
+            transform: scale(.99);
+        }
+    }
+
     &--dash-base {
         font-size: inherit;
         font-family: $font-code;

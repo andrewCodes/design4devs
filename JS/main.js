@@ -615,6 +615,7 @@ $(document).ready(function(){
 
 function devMode() {
     var notice = document.getElementById("devModeNotice");
+    var dev = document.getElementById("devModeSection");
     var header = document.getElementById("header");
     var news = document.getElementById("newsletter");
     var heading = document.getElementById("typographyHeading");
@@ -623,11 +624,14 @@ function devMode() {
 
     btn.onclick = function() {
         notice.classList.add("animation-showHide");
+        dev.classList.add("animation-hideShow");
         btn.classList.add("animation-hideShow");
         news.classList.add("animation-hideShow");
         header.classList.add("animation-hideShow");
         heading.classList.add("animation-hideShow");
         content.classList.add("animation-hideShow");
         console.log("clicked");
+
+        //try adding a timeout to remove the classes after they've been added... I THINK this will mean the function can run more than once
     }
 };
