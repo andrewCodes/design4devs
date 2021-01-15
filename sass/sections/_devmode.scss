@@ -1,0 +1,16 @@
+.dev-mode {
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    &__notice {
+        text-align: center;
+        color: $color-base-x-dark;
+        font-size: 5rem;
+        font-weight: 300;
+        letter-spacing: .7rem;
+        opacity: 0;
+    }
+}

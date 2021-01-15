@@ -585,3 +585,49 @@ function conversionModalEx7() {
 function copyrightYear() {
     document.querySelector('#copyright-year').innerText = new Date().getFullYear();
 }
+
+///////////////////////////////
+// SMOOTH SCROLLING FOR DEV MODE
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links with smooth-scroll class
+    $("a.smooth-scroll").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 4200);
+        } // End if
+    });
+});
+
+//////////////////////////
+// HIDE / SHOW TYPOGRAPHY SECTION - DEV MODE
+
+function devMode() {
+    var notice = document.getElementById("devModeNotice");
+    var header = document.getElementById("header");
+    var news = document.getElementById("newsletter");
+    var heading = document.getElementById("typographyHeading");
+    var content = document.getElementById("typographyContent");
+    var btn = document.getElementById("devModeBtn");
+
+    btn.onclick = function() {
+        notice.classList.add("animation-showHide");
+        btn.classList.add("animation-hideShow");
+        news.classList.add("animation-hideShow");
+        header.classList.add("animation-hideShow");
+        heading.classList.add("animation-hideShow");
+        content.classList.add("animation-hideShow");
+        console.log("clicked");
+    }
+};

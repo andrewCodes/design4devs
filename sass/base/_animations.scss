@@ -1,3 +1,6 @@
+///////////////////////
+// FADE ANIMATIONS
+
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -70,4 +73,56 @@
     100% {
         opacity: 1;
     }
+}
+
+//////////////////////////
+// HIDE SHOW ANIMATION
+
+@keyframes hideShow {
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-hideShow {
+    animation-name: hideShow;
+    animation-duration: 4.7s;
+    animation-timing-function: ease-out;
+}
+
+//////////////////////////
+// SHOW HIDE ANIMATION
+
+@keyframes showHide {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animation-showHide {
+    animation-name: showHide;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-out;
 }
