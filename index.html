@@ -31,7 +31,7 @@
 
         <div class="navigation">
             <input checked="false" tabindex="0" type="checkbox" class="navigation__checkbox" id="nav-toggle" aria-hidden="true" aria-checked="false" aria-labelledby="nav-toggle-label" aria-controls="navigation__list">
-            <label id="nav-toggle-label" for="nav-toggle" class="navigation__button" aria-label="navigation toggle button">
+            <label role="button" tabindex="0" id="nav-toggle-label" for="nav-toggle" class="navigation__button" aria-label="navigation toggle button">
                 <span id="navigation__icon--1" class="navigation__icon navigation__icon--1"></span>
                 <span id="navigation__icon--2" class="navigation__icon navigation__icon--2"></span>
                 <span id="navigation__icon--3" class="navigation__icon navigation__icon--3"></span>
@@ -75,16 +75,16 @@
                 <h3 class="newsletter__title">D4D Resources: free design tips, useful tools and member discounts</h3>
                 <p class="newsletter__text">Join 50,000+ developers and never miss an update!</p>
                 <div class="newsletter__form">
-                    <form class="sign-up">
+                    <form id="sign-up" class="sign-up" aria-label="newsletter sign up">
                         <div class="sign-up__input-group">
-                            <input id="sign-up__input--name" type="text" class="sign-up__input" placeholder="Name">
-                            <label for="sign-up__input--name" class="sign-up__label">Name</label>
+                            <input id="sign-up__input--name" type="text" class="sign-up__input" placeholder="Name" aria-labelledby="sign-up__label--name" aria-required="false">
+                            <label id="sign-up__label--name" for="sign-up__input--name" class="sign-up__label" aria-label="name">Name</label>
                         </div>
                         <div class="sign-up__input-group">
-                            <input id="sign-up__input--email" type="email" class="sign-up__input" placeholder="Email *">
-                            <label for="sign-up__input--email" class="sign-up__label" required>Email *</label>
+                            <input id="sign-up__input--email" type="email" class="sign-up__input" placeholder="Email *" aria-labelledby="sign-up__label--email" aria-required="true">
+                            <label id="sign-up__label--email" for="sign-up__input--email" class="sign-up__label" required aria-label="Email">Email *</label>
                         </div>
-                        <button class="btn btn--primary sign-up__btn">Yes please!</button>
+                        <button id="sign-up-submit" class="btn btn--primary sign-up__btn" type="submit" value="Submit" form="sign-up" name="sign-up-submit" aria-label="submit form">Yes please!</button>
                     </form>
                 </div>
             </div>
@@ -93,7 +93,7 @@
         <!-- DEV MODE -->
 
         <div class="dev-mode" id="devMode">
-            <h2 class="dev-mode__notice" id="devModeNotice">ENGAGING DEV MODE</h2>
+            <h2 class="dev-mode__notice" id="devModeNotice" aria-hidden="true">ENGAGING DEV MODE</h2>
         </div>
 
         <section class="devmode-section" id="devModeSection">
@@ -106,7 +106,7 @@
             <div class="devmode-section__center">
                 <h4 class="devmode-section__text">Get designing today...</h4>
                 <p class="devmode-section__instruction">...engage <span>dev mode</span> to begin</p>
-                <a href="#typographySection" class="devmode-section__btn btn smooth-scroll" id="devModeBtn">Engage dev mode</a>
+                <a href="#typographySection" class="devmode-section__btn btn smooth-scroll" id="devModeBtn" aria-label="click for content">Engage dev mode</a>
             </div>
 
         </section>
@@ -115,14 +115,6 @@
 
         <section class="continue-section" id="continue">
             <div class="continue-section__grad">&nbsp;</div>
-            <!--div class="continue__arrows">
-<div class="continue__arrows--left"></div>
-<div class="continue__arrows--center-left"></div>
-<div class="continue__arrows--center"></div>
-<div class="continue__arrows--center-right"></div>
-<div class="continue__arrows--right"></div>
-</div-->
-            <!--h2 class="heading-1 continue__heading" id="engageNotice">&nbsp;</h2-->
         </section>
 
         <!-- TYPOGRAPHY -->
@@ -208,71 +200,70 @@
                 </div>
                 <div class="typography__separator typography__separator--5"></div>
             </div>
+
             <!-- TYPO GALLERY -->
 
-            <aside class="gallery-typography gallery">
+            <aside class="gallery-typography gallery" aria-label="gallery of examples of typography">
 
-                <!-- (figure.gallery__item.gallery__item--$>img.gallery__img[src="img/gal-$.jpeg"][alt="House $"])*14 -->
-
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--1">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--1" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-1.jpg" alt="typography image 1" class="gallery-typography__img">
+                    <img src="img/Typography/gal-1.jpg" alt="typography terms" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--2">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--2" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-2.png" alt="typography image 2" class="gallery-typography__img">
+                    <img src="img/Typography/gal-2.png" alt="female face collage of words" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--3">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--3" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-3.jpg" alt="typography image 3" class="gallery-typography__img">
+                    <img src="img/Typography/gal-3.jpg" alt="numerical and text 44" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--4">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--4" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-4.jpg" alt="typography image 4" class="gallery-typography__img">
+                    <img src="img/Typography/gal-4.jpg" alt="3d style font" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--5">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--5" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-5.jpg" alt="typography image 5" class="gallery-typography__img">
+                    <img src="img/Typography/gal-5.jpg" alt="no fly posters poster" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--6">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--6" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-6.jpg" alt="typography image 6" class="gallery-typography__img">
+                    <img src="img/Typography/gal-6.jpg" alt="random letter" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--7">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--7" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-7.jpg" alt="typography image 7" class="gallery-typography__img">
+                    <img src="img/Typography/gal-7.jpg" alt="did you smile today written on wooden board" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--8">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--8" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-8.jpg" alt="typography image 8" class="gallery-typography__img">
+                    <img src="img/Typography/gal-8.jpg" alt="alphabet in unusual font" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--9">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--9" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-9.jpg" alt="typography image 9" class="gallery-typography__img">
+                    <img src="img/Typography/gal-9.jpg" alt="retro typography written in a retro style font" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--10">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--10" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-10.jpg" alt="typography image 10" class="gallery-typography__img">
+                    <img src="img/Typography/gal-10.jpg" alt="grafiti" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--11">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--11" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-11.jpg" alt="typography image 11" class="gallery-typography__img">
+                    <img src="img/Typography/gal-11.jpg" alt="hope written in an extravagent font" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--12">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--12" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-12.jpg" alt="typography image 12" class="gallery-typography__img">
+                    <img src="img/Typography/gal-12.jpg" alt="alphabet in various fonts" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--13">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--13" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-13.jpg" alt="typography image 13" class="gallery-typography__img">
+                    <img src="img/Typography/gal-13.jpg" alt="stop procrastinating written in an eighties style font" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--14">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--14" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-14.png" alt="typography image 14" class="gallery-typography__img">
+                    <img src="img/Typography/gal-14.png" alt="typographical cheatsheet" class="gallery-typography__img">
                 </figure>
-                <figure class="gallery__item gallery-typography__item gallery-typography__item--15">
+                <figure class="gallery__item gallery-typography__item gallery-typography__item--15" aria-label="typography example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Typography/gal-15.jpg" alt="typography image 14" class="gallery-typography__img">
+                    <img src="img/Typography/gal-15.jpg" alt="printing press" class="gallery-typography__img">
                 </figure>
             </aside>
         </section>
@@ -360,71 +351,70 @@
                 <div class="colours__separator colours__separator--5"></div>
 
             </div>
+
             <!-- COLOURS GALLERY -->
 
-            <aside class="gallery-colours gallery">
+            <aside class="gallery-colours gallery" aria-label="gallery of examples of colour usage">
 
-                <!-- (figure.gallery__item.gallery__item--$>img.gallery__img[src="img/gal-$.jpeg"][alt="House $"])*14 -->
-
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--1">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--1" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-1.jpg" alt="colours image 1" class="gallery-colours__img">
+                    <img src="img/Colours/gal-1.jpg" alt="varied colour palette" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--2">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--2" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-2.jpg" alt="colours image 2" class="gallery-colours__img">
+                    <img src="img/Colours/gal-2.jpg" alt="blue art tools" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--3">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--3" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-3.jpg" alt="colours image 3" class="gallery-colours__img">
+                    <img src="img/Colours/gal-3.jpg" alt="female face with multicoloured face paint" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--4">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--4" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-4.jpg" alt="colours image 4" class="gallery-colours__img">
+                    <img src="img/Colours/gal-4.jpg" alt="paint blocks and brush" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--5">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--5" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-5.jpg" alt="colours image 5" class="gallery-colours__img">
+                    <img src="img/Colours/gal-5.jpg" alt="grafiti on wall" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--6">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--6" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-6.jpg" alt="colours image 6" class="gallery-colours__img">
+                    <img src="img/Colours/gal-6.jpg" alt="coloured roof tiles" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--7">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--7" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-7.jpg" alt="colours image 7" class="gallery-colours__img">
+                    <img src="img/Colours/gal-7.jpg" alt="colouring pencils" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--8">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--8" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-8.jpg" alt="colours image 8" class="gallery-colours__img">
+                    <img src="img/Colours/gal-8.jpg" alt="multi coloured chalk" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--9">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--9" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-9.jpg" alt="colours image 9" class="gallery-colours__img">
+                    <img src="img/Colours/gal-9.jpg" alt="painted pebbles" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--10">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--10" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-10.jpg" alt="colours image 10" class="gallery-colours__img">
+                    <img src="img/Colours/gal-10.jpg" alt="brightly coloured guitars" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--11">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--11" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-11.jpg" alt="colours image 11" class="gallery-colours__img">
+                    <img src="img/Colours/gal-11.jpg" alt="colourful drawing of a brain" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--12">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--12" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-12.jpg" alt="colours image 12" class="gallery-colours__img">
+                    <img src="img/Colours/gal-12.jpg" alt="painted wooden boards" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--13">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--13" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-13.jpg" alt="colours image 13" class="gallery-colours__img">
+                    <img src="img/Colours/gal-13.jpg" alt="face with multicoloured face paint" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--14">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--14" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-14.png" alt="colours image 14" class="gallery-colours__img">
+                    <img src="img/Colours/gal-14.png" alt="colour picker tool" class="gallery-colours__img">
                 </figure>
-                <figure class="gallery__item gallery-colours__item gallery-colours__item--15">
+                <figure class="gallery__item gallery-colours__item gallery-colours__item--15" aria-label="colours example">
                     <div class="gallery__item--overlay"></div>
-                    <img src="img/Colours/gal-15.jpg" alt="colours image 14" class="gallery-colours__img">
+                    <img src="img/Colours/gal-15.jpg" alt="multiple paint pots" class="gallery-colours__img">
                 </figure>
             </aside>
         </section>
@@ -1731,6 +1721,7 @@
             conversionModalEx7();
             copyrightYear();
             devMode();
+            changeCheckbox();
         </script>
 
     </body>
