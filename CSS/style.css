@@ -1279,6 +1279,9 @@ body {
   background-color: #2b2d42;
   font-family: "Fira Code", monospace;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 26.25em) {
+    .footer {
+      padding: 15rem 1rem 6rem 1rem; } }
   .footer__logo {
     position: absolute;
     top: 2.5rem;
