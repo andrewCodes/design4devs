@@ -1,5 +1,5 @@
-.continue {
-    height: 330vh;
+.continue-section {
+    height: 430vh;
     position: relative;
 
     &__arrows {
@@ -67,6 +67,7 @@
         font-size: 5rem;
         font-weight: 300;
         letter-spacing: .7rem;
+        opacity: 0;
 
         @media only screen and (max-width: $bp-sm) {
             font-size: 8vw;
@@ -74,7 +75,7 @@
     }
 
     &__grad {
-        height: 330vh;
+        height: 430vh;
         width: 100vw;
         top: 0;
         left: 0;
@@ -83,5 +84,19 @@
         background-image: linear-gradient(to bottom, rgba($color-dark, 0) 0%, rgba($color-dark, 0) 40%, rgba($color-dark, 1) 80%, rgba($color-dark, 1) 100%);
         position: absolute;
         z-index: 2;
+    }
+}
+
+.continue-content {
+    display: flex;
+
+    &__text {
+        display: inline-block;
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
     }
 }
