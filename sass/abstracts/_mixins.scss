@@ -46,7 +46,7 @@
     z-index: 2;
     top: 0;
 
-    @media only screen and (max-width: $bp-xs) {
+    @include respond(bp-xs) {
         font-size: 9vw;
     }
 }
@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-template-columns: 1fr;
     }
 }
@@ -75,14 +75,14 @@
     font-family: $font-code;
     margin-top: 0;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-column: 1 / span 1;
         margin-bottom: 2rem;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
 
-    @media only screen and (max-width: $bp-xs) {
+    @include respond(bp-xs) {
         font-size: 1.8rem;
     }
 }
@@ -92,7 +92,7 @@
     padding-top: 100%;
     position: relative;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         padding-top: 0;
     }
 }
@@ -112,7 +112,7 @@
     align-content: center;
     color: $color-white-8;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         height: auto;
         width: auto;
         border-radius: 0;
@@ -133,12 +133,12 @@
     font-size: 5rem;
     font-weight: 300;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         line-height: 4rem;
         margin-right: 1.5rem;
     }
 
-    @media only screen and (max-width: $bp-xs) {
+    @include respond(bp-xs) {
         font-size: 4.5rem;
     }
 }
@@ -147,7 +147,7 @@
     width: 100%;
     height: auto;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         width: auto;
         margin: 0 2.5rem;
     }
@@ -180,7 +180,7 @@
     grid-row: 2/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 2 / span 1;
         grid-column: 1/span 1;
     }
@@ -190,7 +190,7 @@
     grid-row: 4/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 5 / span 1;
         grid-column: 1/span 1;
     }
@@ -200,7 +200,7 @@
     grid-row: 6/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 8 / span 1;
         grid-column: 1/span 1;
     }
@@ -210,7 +210,7 @@
     grid-row: 8/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 11/ span 1;
         grid-column: 1/span 1;
     }
@@ -220,7 +220,7 @@
     grid-row: 10/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 14 / span 1;
         grid-column: 1/span 1;
     }
@@ -230,7 +230,7 @@
     grid-row: 12/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 17/ span 1;
         grid-column: 1/span 1;
     }
@@ -240,7 +240,7 @@
     grid-row: 14/span 1;
     grid-column: 2/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 20 / span 1;
         grid-column: 1/span 1;
     }
@@ -253,7 +253,7 @@
     grid-row: 2/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 3/span 1;
         grid-column: 1/span 1;
     }
@@ -263,7 +263,7 @@
     grid-row: 4/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 6 / span 1;
         grid-column: 1/span 1;
     }
@@ -273,7 +273,7 @@
     grid-row: 6/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 9 / span 1;
         grid-column: 1/span 1;
     }
@@ -283,7 +283,7 @@
     grid-row: 8/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 12 / span 1;
         grid-column: 1/span 1;
     }
@@ -293,7 +293,7 @@
     grid-row: 10/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 15 / span 1;
         grid-column: 1/span 1;
     }
@@ -303,7 +303,7 @@
     grid-row: 12/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 18 / span 1;
         grid-column: 1/span 1;
     }
@@ -313,7 +313,7 @@
     grid-row: 14/span 1;
     grid-column: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 21 / span 1;
         grid-column: 1/span 1;
     }
@@ -325,7 +325,7 @@
 @mixin separator--1 {
     grid-row: 3/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 4 / span 1;
     }
 }
@@ -333,7 +333,7 @@
 @mixin separator--2 {
     grid-row: 5/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 7 / span 1;
     }
 }
@@ -341,7 +341,7 @@
 @mixin separator--3 {
     grid-row: 7/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 10 / span 1;
     }
 }
@@ -349,7 +349,7 @@
 @mixin separator--4 {
     grid-row: 9/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 13 / span 1;
     }
 }
@@ -357,7 +357,7 @@
 @mixin separator--5 {
     grid-row: 11/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 16 / span 1;
     }
 }
@@ -365,7 +365,7 @@
 @mixin separator--6 {
     grid-row: 13/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 19 / span 1;
     }
 }
@@ -373,7 +373,7 @@
 @mixin separator--7 {
     grid-row: 15/span 1;
 
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-row: 22 / span 1;
     }
 }

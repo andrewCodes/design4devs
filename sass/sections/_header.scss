@@ -15,24 +15,24 @@
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 
-        @media only screen and (max-width: $bp-sm) {
+        @include respond(bp-sm) {
             clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
         }
     }
 
-    @media only screen and (max-width: $bp-xl) {
+    @include respond(bp-xl) {
         grid-template-columns: [header-start] 7rem [header-center-start] 5fr [header-center-end] 7rem [header-end];
     }
 
-    @media only screen and (max-width: $bp-sm) {
+    @include respond(bp-sm) {
         padding: 10rem 0 7rem 0;
     }
 
-    @media only screen and (max-width: $bp-xs) {
+    @include respond(bp-xs) {
         padding: 10rem 0 4rem 0;
     }
 
@@ -43,11 +43,11 @@
         margin-bottom: 0;
         line-height: 0;
 
-        @media only screen and (max-width: $bp-xl) {
+        @include respond(bp-xl) {
             left: 1rem;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             top: .5rem;
             left: .5rem;
         }
@@ -58,7 +58,7 @@
         width: 8rem;
         height: 8rem;
 
-        @media only screen and (max-width: $bp-md) {
+        @include respond(bp-md) {
             width: 7rem;
             height: 7rem;
         }
@@ -73,11 +73,11 @@
     grid-template-rows: min-content;
     grid-template-columns: minmax(6rem, 1fr) repeat(5,1fr) minmax(6rem, 1fr);
 
-    @media only screen and (max-width: $bp-xl) {
+    @include respond(bp-xl) {
         grid-template-columns: 7rem repeat(5,1fr) 7rem;
     }
     
-    @media only screen and (max-width: $bp-md) {
+    @include respond(bp-md) {
         grid-template-columns: 2rem repeat(5,1fr) 2rem;
     }
 
@@ -94,24 +94,24 @@
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
-        @media only screen and (max-width: $bp-xl) {
+        @include respond(bp-xl) {
             margin-bottom: 2rem;
         }
 
-        @media only screen and (max-width: $bp-lg) {
+        @include respond(bp-lg) {
             margin-bottom: 1.5rem;
         }
 
-        @media only screen and (max-width: $bp-md) {
+        @include respond(bp-md) {
             grid-column: 2 / 7;
         }
 
-        @media only screen and (max-width: $bp-sm) {
+        @include respond(bp-sm) {
             text-shadow: 2px 2px $color-base;
             font-size: 8vw;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             font-size: 9vw;
         }
     }
@@ -129,12 +129,12 @@
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
-        @media only screen and (max-width: $bp-sm) {
+        @include respond(bp-sm) {
             grid-column: 2/7;
             font-size: 3.5vw;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             font-size: 4vw;
         }
     }
@@ -149,7 +149,7 @@
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
-        @media only screen and (max-width: $bp-xl) {
+        @include respond(bp-xl) {
             grid-row: 1 / span 1;
             grid-column: 5 / -1;
             align-self: start;
@@ -157,11 +157,11 @@
             width: 75%;
         }
 
-        @media only screen and (max-width: $bp-sm) {
+        @include respond(bp-sm) {
             margin-top: 3rem;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             margin-top: 0;
             align-self: center;
         }

@@ -18,17 +18,17 @@
         width: 80vw;
         max-height: 80vh;
 
-        @media only screen and (max-width: $bp-md) {
+        @include respond(bp-md) {
             padding: 1.5rem;
             width: 85vw;
         }
 
-        @media only screen and (max-width: $bp-sm) {
+        @include respond(bp-sm) {
             padding: 1rem;
             width: 90vw;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             padding: .5rem;
             width: 95vw;
         }
@@ -54,12 +54,12 @@
             cursor: pointer;
         }
 
-        @media only screen and (max-width: $bp-xl) {
+        @include respond(bp-xl) {
             top: 4.5rem;
             right: 3.5rem;
         }
 
-        @media only screen and (max-width: $bp-md) {
+        @include respond(bp-md) {
             top: 4rem;
             right: 3rem;
         }
@@ -84,7 +84,7 @@
         margin: 2rem auto 0 auto;
         max-width: 75ch;
 
-        @media only screen and (max-width: $bp-xs) {
+        @include respond(bp-xs) {
             padding: 0 0 1rem 0;
         }
 

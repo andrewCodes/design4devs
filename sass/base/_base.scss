@@ -14,15 +14,15 @@ html {
         scroll-behavior: smooth;
     }
 
-    @media only screen and (max-width: $bp-lg) {
+    @include respond(bp-lg) {
         font-size: 55%;
     }
 
-    @media only screen and (max-width: $bp-sm) {
+    @include respond(bp-sm) {
         font-size: 50%;
     }
 
-    @media only screen and (max-width: $bp-xs) {
+    @include respond(bp-xs) {
         font-size: 45%;
     }
 }
