@@ -11,6 +11,10 @@
     font-family: $font-code;
     font-size: 1.4rem;
 
+    @include respond(bp-xs) {
+        padding: 15rem 1rem 6rem 1rem;
+    }
+
     &__logo {
         position: absolute;
         top: 2.5rem;
