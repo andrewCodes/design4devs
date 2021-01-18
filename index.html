@@ -30,8 +30,8 @@
         <!-- NAV -->
 
         <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="navigation__button">
+            <input checked="false" tabindex="0" type="checkbox" class="navigation__checkbox" id="nav-toggle" aria-hidden="true" aria-checked="false" aria-labelledby="nav-toggle-label" aria-controls="navigation__list">
+            <label id="nav-toggle-label" for="nav-toggle" class="navigation__button" aria-label="navigation toggle button">
                 <span id="navigation__icon--1" class="navigation__icon navigation__icon--1"></span>
                 <span id="navigation__icon--2" class="navigation__icon navigation__icon--2"></span>
                 <span id="navigation__icon--3" class="navigation__icon navigation__icon--3"></span>
@@ -39,7 +39,7 @@
 
             <div id="navigation__bg" class="navigation__bg nav-close">&nbsp;</div>
 
-            <nav id="navigation__nav" class="navigation__nav nav-close">
+            <nav id="navigation__nav" class="navigation__nav nav-close" aria-label="main">
                 <ul id="navigation__list" class="navigation__list">
                     <li class="navigation__item"><a href="#typography-section" class="navigation__link  nav-close">Typography</a></li>
                     <li class="navigation__item"><a href="#colours-section" class="navigation__link">Colours</a></li>
@@ -56,12 +56,12 @@
         <!-- HEADER -->
 
         <header class="header" id="header">
-            <a href="index.html" class="header__logo-holder">
+            <div class="header__logo-holder">
                 <img src="img/Logos/D4D-logo-cross-white.png" alt="Design 4 Devs logo" class="header__logo">
-            </a>
+            </div>
             <div class="header-content">
                 <h1 class="header-content__title">Web Design<br>for<br>Web Developers</h1>
-                <img src="img/Undraw/content-team.svg" alt="" class="header-content__image">
+                <img src="img/Undraw/content-team.svg" alt="drawing of a laptop" class="header-content__image">
                 <h2 class="header-content__subtitle">Simple rules and guidelines to improve your web design skills. Learn about typography, colours, images and more</h2>
             </div>
 
@@ -1666,7 +1666,7 @@
 
         <footer class="footer">
             <img src="/img/Logos/D4D-logo-cross-black.png" alt="D4D logo" class="footer__logo">
-            <nav class="footer__nav">
+            <nav class="footer__nav" aria-label="main">
                 <h4 class="footer__heading">Site Contents</h4>
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item footer__nav-item--1"><a href="#typography-section" class="footer__nav-link">Typography</a></li>
