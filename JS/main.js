@@ -635,3 +635,29 @@ function devMode() {
         //try adding a timeout to remove the classes after they've been added... I THINK this will mean the function can run more than once
     }
 };
+
+//////////////////////////////
+// ACCESSIBILITY
+
+/* required scripts...
+
+1. change aria-checked state of nav checkbox
+2. change aria-hidden on modal when open / closed
+3. change aria-hidden on <main> when modal open / closed
+4. move focus to modal when modal opened
+
+function changeCheckbox(event) { // changes aria-checked state of nav checkbox
+    var btn = document.getElementById("nav-toggle-label");
+    let cbox = document.getElementById("nav-toggle");
+
+    btn.onclick function() {
+        switch(cbox.getAttribute("aria-checked")) {
+            case "true":
+                cbox.setAttribute("aria-checked", "false");
+                break;
+            case "false":
+                cbox.setAttribute("aria-checked", "true");
+                break;
+        }
+    };
+}; */

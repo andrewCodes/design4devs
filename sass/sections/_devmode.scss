@@ -101,7 +101,9 @@
         }
     }
 
-    &__btn {
+    &__btn,
+    &__btn:link,
+    &__btn:visited {
         position: relative;
         z-index: 3;
         width: 100%;

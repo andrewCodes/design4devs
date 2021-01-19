@@ -84,8 +84,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  html:focus-within {
-    scroll-behavior: smooth; }
   @media only screen and (max-width: 53.75em) {
     html {
       font-size: 55%; } }
@@ -314,7 +312,10 @@ body {
     margin-bottom: 2rem; }
 
 .navigation__checkbox {
-  display: none; }
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  visibility: hidden; }
 
 .navigation__button {
   background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
@@ -1244,7 +1245,7 @@ body {
     @media only screen and (max-width: 47em) {
       .devmode-section__instruction {
         font-size: 1.8rem; } }
-  .devmode-section__btn {
+  .devmode-section__btn, .devmode-section__btn:link, .devmode-section__btn:visited {
     position: relative;
     z-index: 3;
     width: 100%;
@@ -1258,11 +1259,11 @@ body {
     color: #ffffff;
     border-radius: .3rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
-    .devmode-section__btn:hover {
+    .devmode-section__btn:hover, .devmode-section__btn:link:hover, .devmode-section__btn:visited:hover {
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
       background-blend-mode: darken;
       transform: scale(1.02); }
-    .devmode-section__btn:active {
+    .devmode-section__btn:active, .devmode-section__btn:link:active, .devmode-section__btn:visited:active {
       box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
       background-blend-mode: darken;
       transform: scale(0.99); }
