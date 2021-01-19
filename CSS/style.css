@@ -137,21 +137,21 @@ body {
       box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
       background-blend-mode: darken;
       transform: scale(0.99); }
-  .btn--dash-base {
+  .btn--squared-base {
     font-size: inherit;
     font-family: "Fira Code", monospace;
-    border-radius: none;
+    border-radius: 0;
     border: solid 2px #FFB901;
     color: #FFB901;
     text-decoration: none;
     padding: 1rem 2rem;
     background-color: #2b2d42; }
-    .btn--dash-base:hover {
+    .btn--squared-base:hover {
       background-color: #FFB901;
       border-color: #E3170A;
       color: #2b2d42;
       font-weight: 500; }
-    .btn--dash-base:active {
+    .btn--squared-base:active {
       background-color: #FC9D01;
       border-color: #E3170A;
       color: #2b2d42;
@@ -2273,55 +2273,6 @@ body {
   height: 100%;
   object-fit: cover;
   display: block; }
-
-.intro {
-  display: grid;
-  grid-template-columns: minmax(0rem, 1fr) repeat(auto-fit, minmax(30rem, 2fr)) minmax(0rem, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 5rem;
-  align-items: center;
-  padding: 5rem 0; }
-  .intro__text-bg {
-    width: 100%;
-    padding-top: 100%;
-    position: relative; }
-    .intro__text-bg--left {
-      grid-row: 1/span 1;
-      grid-column: 2/span 1; }
-    .intro__text-bg--right {
-      grid-row: 2/span 1;
-      grid-column: 3/span 1; }
-  .intro__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(145deg, #e3170a 10%, #ffb901);
-    border-radius: 50%;
-    padding: 5rem;
-    display: grid;
-    text-align: center;
-    align-content: center; }
-  .intro__heading {
-    color: rgba(255, 255, 255, 0.8);
-    align-self: end;
-    margin-bottom: 1.5rem;
-    line-height: 3.5rem; }
-  .intro__body {
-    color: rgba(255, 255, 255, 0.8);
-    font-family: "Fira Code", monospace;
-    font-size: 1.8rem; }
-  .intro__image {
-    width: 100%;
-    height: auto; }
-    .intro__image--left {
-      grid-row: 2/span 1;
-      grid-column: 2/span 1; }
-    .intro__image--right {
-      grid-row: 1/span 1;
-      grid-column: 3/span 1; }
 
 .newsletter {
   display: grid;

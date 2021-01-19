@@ -19,7 +19,7 @@
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="JS/main.js"></script>
+        <script src="JS/main.js"></script>
 
 
         <title>Design for Devs</title>
@@ -31,7 +31,7 @@
 
         <div class="navigation">
             <input tabindex="0" type="checkbox" class="navigation__checkbox" id="nav-toggle" aria-hidden="true" aria-checked="false" aria-labelledby="nav-toggle-label" aria-controls="navigation__list">
-            <label role="button" tabindex="0" id="nav-toggle-label" for="nav-toggle" class="navigation__button" aria-label="navigation toggle button">
+            <label tabindex="0" id="nav-toggle-label" for="nav-toggle" class="navigation__button" aria-label="navigation toggle button">
                 <span id="navigation__icon--1" class="navigation__icon navigation__icon--1"></span>
                 <span id="navigation__icon--2" class="navigation__icon navigation__icon--2"></span>
                 <span id="navigation__icon--3" class="navigation__icon navigation__icon--3"></span>
@@ -115,9 +115,9 @@
 
             <!-- CONTINUE TO SITE -->
 
-            <section class="continue-section" id="continue">
+            <div class="continue-section" id="continue">
                 <div class="continue-section__grad">&nbsp;</div>
-            </section>
+            </div>
 
             <!-- TYPOGRAPHY -->
 
@@ -441,7 +441,7 @@
                         <p>If the contrast is too low the text will be hard to read and your site will fail accessibility tests.</p>
                         <p>You can check for colour accessibility using this <a href="https://coolors.co" target="_blank">background image a11y check <i class="fas fa-external-link-alt"></i></a> tool.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="images__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="images__ex1-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="images__separator images__separator--1"></div>
@@ -459,8 +459,8 @@
                         <p>You can also a colour to overlay an image. You should use the <span>base colour</span> of your website to ensure it fits with the overall design.</p>
                         <p>Another way to use an overlay is as a <span>coloured gradient</span>. Consider using a gradient from the dark version of your base colour to the light version of it.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="images__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
-                            <button id="images__code2-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                            <button id="images__ex2-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
+                            <button id="images__code2-btn" class="btn btn--squared-base">See code &#123;..&#125;</button>
                         </div>
                     </div>
                     <div class="images__separator images__separator--2"></div>
@@ -478,8 +478,8 @@
                         <p>The box should have a <span>slightly transparent</span> background colour so the image can be made out through the box.</p>
                         <p>Doing so will make the image and the text boxes feel more like a single element.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="images__ex3-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
-                            <button id="images__code3-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                            <button id="images__ex3-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
+                            <button id="images__code3-btn" class="btn btn--squared-base">See code &#123;..&#125;</button>
                         </div>
                     </div>
                     <div class="images__separator images__separator--3"></div>
@@ -497,8 +497,8 @@
                         <p>You can either <span>blur the whole image</span> or put text over a <span>blurred section</span> of an in-focus image.</p>
                         <p>If placing text over a blurred section of an image, be careful to ensure your text stays on that section on all screen sizes.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="images__ex4-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
-                            <button id="images__code4-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                            <button id="images__ex4-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
+                            <button id="images__code4-btn" class="btn btn--squared-base">See code &#123;..&#125;</button>
                         </div>
                     </div>
                     <div class="images__separator images__separator--4"></div>
@@ -516,8 +516,8 @@
                         <p>As the image <span>fades towards black</span> at the bottom, light colour text is placed on the darker section.</p>
                         <p>When done well the floor fade can be almost unnoticeable.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="images__ex5-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
-                            <button id="images__code5-btn" class="btn btn--dash-base">See code &#123;..&#125;</button>
+                            <button id="images__ex5-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
+                            <button id="images__code5-btn" class="btn btn--squared-base">See code &#123;..&#125;</button>
                         </div>
                     </div>
                     <div class="images__separator images__separator--5"></div>
@@ -612,7 +612,7 @@
                         <p>If your site has setup or sign up steps, icons can work well to keep <span>text explanations shorter</span>.</p>
                         <p>In each case, icons will help <span>draw the eye</span> of your user to these important parts of your site.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="icons__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="icons__ex1-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="icons__separator icons__separator--1"></div>
@@ -630,7 +630,7 @@
                         <p>First, icons should be <span>recognisable</span>. If it is not obvious what your icon means, choose another.</p>
                         <p>Second, <span>label your icons</span> if you have room. Whilst a label isn't essential it will remove any ambiguity, should it exist.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="icons__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="icons__ex2-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="icons__separator icons__separator--2"></div>
@@ -648,7 +648,7 @@
                         <p>You shouldn't use them as the main part of your site. Too many icons can make it cluttered and confusing.</p>
                         <p>If you use too many, the icons can lose their meaning and impact.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="icons__ex3-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="icons__ex3-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="icons__separator icons__separator--3"></div>
@@ -666,7 +666,7 @@
                         <p>Standard images (e.g. png, jpeg) will become blurred as they enlarge.</p>
                         <p>SVGs and icon fonts are also much more easily manipulated with CSS.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="icons__ex4-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="icons__ex4-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="icons__separator icons__separator--4"></div>
@@ -761,7 +761,7 @@
                         <p>Content with space around it looks more appealing and is <span>easier to take in</span>. You should look to space out elements, groups of elements and sections.</p>
                         <p> However, be careful not to exaggerate the gaps otherwise your site will start to look disjointed.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="spacing__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="spacing__ex1-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="spacing__separator spacing__separator--1"></div>
@@ -780,7 +780,7 @@
                         <p>You should define what you want you audience to see first and then <span>establish a flow</span> that corresponds to yur content's message. You can use white space to build that flow.</p>
                         <p>When well thought out white space will <span>create distinct sections</span> flowing from one to the next.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="spacing__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="spacing__ex2-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="spacing__separator spacing__separator--2"></div>
@@ -876,7 +876,7 @@
                         <p>Many designers will go to sites such as <a href="https://dribbble.com" target="_blank">Dribbble <i class="fas fa-external-link-alt"></i></a> or <a href="https://www.behance.net" target="_blank">Behance <i class="fas fa-external-link-alt"></i></a> to view the work of other designers. This will help get their creative juices flowing. It will also help you stay up to date with design trends.</p>
                         <p>Less obvious places to look for design inspiration are design <span>podcasts</span>, outdated print design manuals, food / drink <span>packaging</span>, movie <span>title sequences</span> and simply by taking a step outside and looking at what's around you... posters, billboards, shop signs and <span>nature</span> itself.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="inspiration__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="inspiration__ex1-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="inspiration__separator inspiration__separator--1"></div>
@@ -895,7 +895,7 @@
                         <p>Ask yourself... <span>Why</span> do these websites look good? <span>What</span> is it about them that I like? Considering what your collection of inspirational websites have in common may help you answer these questions.</p>
                         <p>You should also try to understand the technical side of the websites you like. <span>Inspect the code</span> and see how they have been built in HTML and CSS.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="inspiration__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="inspiration__ex2-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="inspiration__separator inspiration__separator--2"></div>
@@ -914,7 +914,7 @@
                         <p>When you first start out in design, simply make your designs look like sites you like. You do not need to worry about being <span>original</span> or having your own style.</p>
                         <p>Originality and forming <span>your own style</span> will come automatically as you get better and more experienced as a designer.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="inspiration__ex3-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="inspiration__ex3-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="inspiration__separator inspiration__separator--3"></div>
@@ -1008,7 +1008,7 @@
                         <p>Rather than trying to sell to your visitor right away, you can offer them something <span>free and useful</span>. A fairly standard give away item is an ebook or a free tutorial / short course.</p>
                         <p>Providing something useful for free will make visitors trust your paid services and they are <span>more likely to convert</span> to paying customers.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex1-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex1-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--1"></div>
@@ -1027,7 +1027,7 @@
                         <p>To encourage users to click your CTA you should make it <span>highly visible</span> and easy to access. This means placing it in more than one prominent place on your website.</p>
                         <p>Standard places to put your primary CTA are your <span>navbar</span>, above the fold <span>header</span> and at the end of the page.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex2-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex2-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--2"></div>
@@ -1045,7 +1045,7 @@
                         <p><span>Popup boxes</span> are a great way to grab a visitor's attention and encourage them to take an action. For example, sign up to your newsletter.</p>
                         <p>Whilst popup boxes are almost universally regarded as a bit annoying, they are <span>proven to work</span>. If you use a popup to encourage users to take an action they are more likely to do so than if the popup were not there.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex3-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex3-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--3"></div>
@@ -1063,7 +1063,7 @@
                         <p>Rather than writing "Click Here" or "Sign Up" as your call to action, try saying something like <span>"Try for Free"</span> instead.</p>
                         <p> Using language like this will increase the likelihood of the user clicking the button. They know the benefit of carrying out the action... they will get to try what they're interested in for free!</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex4-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex4-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--4"></div>
@@ -1080,7 +1080,7 @@
                         <p>A sure way to discourage users from completing a sign up process is to ask them for too much information. Only ask for the <span>information you actually need</span>.</p>
                         <p>If you must ask for more information, make as many fields as possible optional. You can easily <span>ask for more later</span>.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex5-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex5-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--5"></div>
@@ -1098,7 +1098,7 @@
                         <p>Including this type of information to your visitors will <span>inspire confidence</span> in your product or service.</p>
                         <p>It makes your site more credible, can explain specific benefits and offers <span>unbiased evidence</span> of positive user experiences.</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex6-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex6-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--6"></div>
@@ -1116,7 +1116,7 @@
                         <p>You can create a sense of urgency by making something <span>time dependent</span>. For example if you are selling an online course you can show a price reduction that is only valid for 48 hours.</p>
                         <p>If you have a tangible products, you can include your stock numbers to show there is <span>not many items left</span> of a particular product. For examle, "Only 2 items left... order now!"</p>
                         <div class="explainer-buttons btn-group">
-                            <button id="conversion__ex7-btn" class="btn btn--dash-base">See example <i class="far fa-images"></i></button>
+                            <button id="conversion__ex7-btn" class="btn btn--squared-base">See example <i class="far fa-images"></i></button>
                         </div>
                     </div>
                     <div class="conversion__separator conversion__separator--7"></div>
@@ -1700,7 +1700,7 @@
         </div>
         <!-- JS -->
 
-        <script type="text/javascript">
+        <script>
             imagesModalEx1();
             imagesModalCode2();
             imagesModalEx2();

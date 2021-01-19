@@ -46,10 +46,10 @@
         }
     }
 
-    &--dash-base {
+    &--squared-base {
         font-size: inherit;
         font-family: $font-code;
-        border-radius: none;
+        border-radius: 0;
         border: solid 2px $color-base;
         color: $color-base;
         text-decoration: none;
