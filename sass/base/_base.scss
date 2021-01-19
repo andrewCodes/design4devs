@@ -11,7 +11,7 @@ html {
     font-size: 62.5%; // 1rem = 10px
 
     &:focus-within { //if added direct to html smooth-scrolling will be applied to search results accessed via CTRL+F. This way smooth scroll is only enabled when focus is on the page itself.
-        scroll-behavior: smooth;
+        //scroll-behavior: smooth; //have removed this as it creates an unpleasant effect on chrome when using the main nav. I'd like to figure out a way to have this in place but exclude the nav links from the smooth scroll behaviour so they just jump straight to the relevant section
     }
 
     @include respond(bp-lg) {

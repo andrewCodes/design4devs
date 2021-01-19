@@ -639,6 +639,13 @@ function devMode() {
 //////////////////////////////
 // ACCESSIBILITY
 
+/* required scripts...
+
+1. change aria-checked state of nav checkbox
+2. change aria-hidden on modal when open / closed
+3. change aria-hidden on <main> when modal open / closed
+4. move focus to modal when modal opened
+
 function changeCheckbox(event) { // changes aria-checked state of nav checkbox
     var btn = document.getElementById("nav-toggle-label");
     let cbox = document.getElementById("nav-toggle");
@@ -653,4 +660,4 @@ function changeCheckbox(event) { // changes aria-checked state of nav checkbox
                 break;
         }
     };
-};
+}; */
