@@ -2,6 +2,10 @@
 
 As part of my front-end development training plan I watched a video tutorial by [Jonas Schmedtmann](https://twitter.com/jonasschmedtman) called [Web Design for Web Developers](https://www.udemy.com/course/web-design-secrets/). Rather than simply taking notes I decided to use my notes as the content for a website. This is that website.
 
+The site and all its content has been designed, written and coded by me (Andrew Long). No code was provided as part of the aforementioned tutorial.
+
+The site has been written desktop-first. This decision was made as, if the site were publicly available, I would expect most users to be accessing it via a desktop rather than a mobile device. I see it as a reference tool that a developer could have open whilst working on personal projects to improve their design skills.
+
 __Note__: this is an incomplete project and still under active development.
 
 ## Table of Contents
@@ -30,7 +34,7 @@ Project is created with:
 To run this project locally, use npm:
 
 ```
-$ cd ../design4devs
+$ cd design4devs
 $ npm run start
 ```
 
@@ -58,10 +62,8 @@ Each development branch will have a precise and limited scope (a new section for
 ## Future Development
 
 As noted, this project is still under construction. Once completed the following changes will have been implemented:
-* All sections of Tips & Guidelines included
-* Responsive across all screen sizes
-* Navigation between sections
 * Newsletter sign up form will confirm successful submission of form, add the user's details to a database and send the user a welcome email
+* Accessibility improvements via JavaScript (see main.js code comments for further info)
 
 ## Further Information
 
