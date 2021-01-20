@@ -170,6 +170,9 @@ body {
     .btn--back-top:hover {
       color: #FC9D01;
       transform: scale(1.1); }
+    @media only screen and (max-width: 47em) {
+      .btn--back-top {
+        display: none !important; } }
 
 .explainer-buttons {
   display: flex;
