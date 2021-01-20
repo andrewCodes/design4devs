@@ -16,12 +16,12 @@
     "author": "Andrew Long",
     "license": "ISC",
     "dependencies": {
-        "autoprefixer": "^10.0.4",
+        "autoprefixer": "^10.2.3",
         "concat": "^1.0.3",
         "live-server": "^1.2.1",
         "node-sass": "^5.0.0",
         "npm-run-all": "^4.1.5",
-        "postcss": "^8.1.14",
-        "postcss-cli": "^8.3.0"
+        "postcss": "^8.2.4",
+        "postcss-cli": "^8.3.1"
     }
 }
