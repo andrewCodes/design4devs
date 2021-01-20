@@ -157,6 +157,7 @@ body {
       color: #2b2d42;
       font-weight: 500; }
   .btn--back-top {
+    display: none;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -166,6 +167,9 @@ body {
     line-height: 1;
     text-align: center;
     font-size: 4rem; }
+    .btn--back-top:hover {
+      color: #FC9D01;
+      transform: scale(1.1); }
 
 .explainer-buttons {
   display: flex;

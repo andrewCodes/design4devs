@@ -634,6 +634,23 @@ $(document).ready(function(){
     });
 });
 
+/* SCROLL TO TOP BUTTON */
+
+$(document).ready(function(btt) {
+    btbtn = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btbtn.style.display = "block";
+        } else {
+            btbtn.style.display = "none";
+        }
+    };
+});
+
 //////////////////////////
 // HIDE / SHOW TYPOGRAPHY SECTION - DEV MODE
 
@@ -645,6 +662,7 @@ function devMode() {
     var heading = document.getElementById("typographyHeading");
     var content = document.getElementById("typographyContent");
     var btn = document.getElementById("devModeBtn");
+    var caret = document.getElementById("backToTopBtn");
 
     btn.onclick = function() {
         notice.classList.add("animation-showHide");
@@ -654,6 +672,7 @@ function devMode() {
         header.classList.add("animation-hideShow");
         heading.classList.add("animation-hideShow");
         content.classList.add("animation-hideShow");
+        caret.classList.add("animation-hideShow");
         console.log("clicked");
 
         //try adding a timeout to remove the classes after they've been added... I THINK this will mean the function can run more than once
