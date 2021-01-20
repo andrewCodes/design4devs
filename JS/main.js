@@ -591,7 +591,7 @@ function copyrightYear() {
 
 $(document).ready(function(){
     // Add smooth scrolling to all links with smooth-scroll class
-    $("a.smooth-scroll").on('click', function(event) {
+    $("a.smooth-scroll-dev").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -610,6 +610,47 @@ $(document).ready(function(){
     });
 });
 
+///////////////////////////////
+// SMOOTH SCROLLING FOR GENERAL USE
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links with smooth-scroll class
+    $("a.smooth-scroll").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+        } // End if
+    });
+});
+
+/* SCROLL TO TOP BUTTON */
+
+$(document).ready(function(btt) {
+    btbtn = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btbtn.style.display = "block";
+        } else {
+            btbtn.style.display = "none";
+        }
+    };
+});
+
 //////////////////////////
 // HIDE / SHOW TYPOGRAPHY SECTION - DEV MODE
 
@@ -621,6 +662,7 @@ function devMode() {
     var heading = document.getElementById("typographyHeading");
     var content = document.getElementById("typographyContent");
     var btn = document.getElementById("devModeBtn");
+    var caret = document.getElementById("backToTopBtn");
 
     btn.onclick = function() {
         notice.classList.add("animation-showHide");
@@ -630,6 +672,7 @@ function devMode() {
         header.classList.add("animation-hideShow");
         heading.classList.add("animation-hideShow");
         content.classList.add("animation-hideShow");
+        caret.classList.add("animation-hideShow");
         console.log("clicked");
 
         //try adding a timeout to remove the classes after they've been added... I THINK this will mean the function can run more than once
