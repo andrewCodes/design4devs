@@ -88,8 +88,31 @@ function copyCodeI5() {
 ///////////////////////////
 // MODAL - there will be a better (DRY-er) way of doing this. To be revisited
 
-// Images Modals
+// found the better way... it is this... (n.b. only done first three modals... do the rest)
 
+function useModal(modalId, modalOpen, modalClose) {
+    let modal = document.getElementById(`${modalId}`);
+    let btn = document.getElementById(`${modalOpen}`);
+    let span = document.getElementById(`${modalClose}`);
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
+useModal('images-modal-ex1', 'images__ex1-btn', 'modal__close--images-ex1');
+useModal('images-modal-ex2', 'images__ex2-btn', 'modal__close--images-ex2');
+useModal('images-modal-code2', 'images__code2-btn', 'modal__close--images-code2');
+
+// Images Modals
+/*
 function imagesModalEx1() {
     // Get the modal
     var modal = document.getElementById("images-modal-ex1");
@@ -157,7 +180,7 @@ function imagesModalCode2() {
         }
     }
 };
-
+*/
 function imagesModalEx3() {
     var modal = document.getElementById("images-modal-ex3");
     var btn = document.getElementById("images__ex3-btn");
