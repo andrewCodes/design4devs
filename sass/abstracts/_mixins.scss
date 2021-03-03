@@ -25,7 +25,6 @@
 @mixin section-layout { //creates container for sections
     height: 100%;
     width: 100%;
-    background-color: $color-dark;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -52,7 +51,6 @@
 }
 
 @mixin section-content { // creates grid container for main content within a section (i.e. everything except the section heading)
-    background-color: $color-dark;
     display: grid;
     grid-template-columns:  minmax(0rem, 1fr) 20rem minmax(60ch, 90ch) minmax(0rem, 1fr);
     grid-column-gap: 3rem;
