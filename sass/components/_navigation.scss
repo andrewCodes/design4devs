@@ -98,8 +98,9 @@
             text-decoration: none;
             text-transform: uppercase;
             text-align: center;
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
             background-image: linear-gradient(to right, $color-base-x-dark, $color-base 50%, $color-white 50%);
             background-size: 200% 100%;
             background-position: -100%;
